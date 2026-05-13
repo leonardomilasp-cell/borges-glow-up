@@ -31,8 +31,8 @@ const segmentos = [
 ];
 
 const produtos = [
-  { name: "Elemento Coalescente NBF-23FM", tag: "Hidrofóbico", img: prodCoal },
-  { name: "Filtro Cúpula Alumínio com Dreno", tag: "Cúpula", img: prodCupula },
+  { name: "Filtro Cúpula Alumínio com Dreno", tag: "Cúpula", img: prodCoal },
+  { name: "Filtro CP Tela Inox", tag: "Tela Inox", img: prodCupula },
   { name: "Filtro de Alta Vazão", tag: "Alta Vazão", img: prodAlta },
   { name: "Filtro NBF-14", tag: "Linha NBF", img: prodNbf },
 ];
