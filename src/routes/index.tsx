@@ -1,15 +1,15 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import hero from "@/assets/hero-filter.jpg";
+import hero from "@/assets/nb/deposito.jpg";
 import segFazendas from "@/assets/seg-fazendas.jpg";
 import segTrans from "@/assets/seg-transportadoras.jpg";
 import segUsinas from "@/assets/seg-usinas.jpg";
 import segAviacao from "@/assets/seg-aviacao.jpg";
-import prodCoal from "@/assets/prod-coalescente.jpg";
-import prodCupula from "@/assets/prod-cupula.jpg";
-import prodAlta from "@/assets/prod-altavazao.jpg";
-import prodNbf from "@/assets/prod-nbf.jpg";
+import prodCoal from "@/assets/nb/Filtro-cupula-Aluminio-com-dreno.jpg";
+import prodCupula from "@/assets/nb/Filtro-CP-Tela-inox.jpg";
+import prodAlta from "@/assets/nb/Filtro-Alta-Vazao.jpg";
+import prodNbf from "@/assets/nb/NBF-14-1.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
