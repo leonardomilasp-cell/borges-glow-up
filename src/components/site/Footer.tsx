@@ -1,16 +1,15 @@
 import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Phone, MapPin, Mail } from "lucide-react";
+import logo from "@/assets/nb/logo.png";
 
 export function Footer() {
   return (
     <footer className="border-t border-border bg-surface mt-32">
       <div className="px-6 lg:px-12 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
-          <div className="flex items-center gap-2.5">
-            <div className="size-10 rounded-lg bg-gradient-primary grid place-items-center font-display font-bold text-primary-foreground">nb</div>
-            <div>
-              <div className="font-display font-bold">New Borges</div>
-              <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Filtros Industriais</div>
+          <div className="flex items-center gap-3">
+            <div className="rounded-xl bg-white p-2 shadow-soft">
+              <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-10 w-auto object-contain" />
             </div>
           </div>
           <p className="mt-5 text-sm text-muted-foreground max-w-md">
