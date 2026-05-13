@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Instagram, Facebook, Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/nb/logo.png";
 
 const nav = [
   { to: "/", label: "Início" },
