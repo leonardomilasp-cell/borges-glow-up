@@ -1,6 +1,7 @@
 import { Link } from "@tanstack/react-router";
 import { Phone, MapPin, Instagram, Facebook, Menu, X } from "lucide-react";
 import { useState } from "react";
+import logo from "@/assets/nb/logo.png";
 
 const nav = [
   { to: "/", label: "Início" },
@@ -24,9 +25,11 @@ export function Header() {
         </div>
       </div>
       <div className="flex items-center justify-between px-6 lg:px-12 py-4">
-        <Link to="/" className="flex items-center gap-2.5">
-          <div className="size-10 rounded-lg bg-gradient-primary grid place-items-center font-display font-bold text-primary-foreground text-lg shadow-glow">nb</div>
-          <div className="leading-tight">
+        <Link to="/" className="flex items-center gap-3">
+          <div className="rounded-xl bg-white p-1.5 shadow-soft">
+            <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-9 w-auto object-contain" />
+          </div>
+          <div className="leading-tight hidden sm:block">
             <div className="font-display font-bold tracking-tight">New Borges</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Filtros Industriais</div>
           </div>
