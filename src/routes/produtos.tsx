@@ -1,9 +1,9 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
-import prodCoal from "@/assets/prod-coalescente.jpg";
-import prodCupula from "@/assets/prod-cupula.jpg";
-import prodAlta from "@/assets/prod-altavazao.jpg";
-import prodNbf from "@/assets/prod-nbf.jpg";
+import prodCoal from "@/assets/nb/filtro-CP-Fenolica.jpg";
+import prodCupula from "@/assets/nb/Filtro-cupula-Aluminio-com-dreno.jpg";
+import prodAlta from "@/assets/nb/Filtro-Alta-Vazao.jpg";
+import prodNbf from "@/assets/nb/NBF-28.jpg";
 
 export const Route = createFileRoute("/produtos")({
   head: () => ({
