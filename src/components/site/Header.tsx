@@ -26,9 +26,7 @@ export function Header() {
       </div>
       <div className="flex items-center justify-between px-6 lg:px-12 py-4">
         <Link to="/" className="flex items-center gap-3">
-          <div className="rounded-xl bg-white p-1.5 shadow-soft">
-            <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-9 w-auto object-contain" />
-          </div>
+          <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-10 w-auto object-contain" />
           <div className="leading-tight hidden sm:block">
             <div className="font-display font-bold tracking-tight">New Borges</div>
             <div className="text-[10px] uppercase tracking-[0.2em] text-muted-foreground">Filtros Industriais</div>
