@@ -8,12 +8,10 @@ export function Footer() {
       <div className="px-6 lg:px-12 py-16 grid gap-12 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-3">
-            <div className="rounded-xl bg-white p-2 shadow-soft">
-              <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-10 w-auto object-contain" />
-            </div>
+            <img src={logo} alt="New Borges Filtros" width={120} height={80} className="h-12 w-auto object-contain" />
           </div>
           <p className="mt-5 text-sm text-muted-foreground max-w-md">
-            Há mais de 10 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação.
+            Há 11 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação.
           </p>
         </div>
         <div>

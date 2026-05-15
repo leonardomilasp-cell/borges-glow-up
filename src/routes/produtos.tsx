@@ -3,45 +3,45 @@ import { Layout } from "@/components/site/Layout";
 import prodCoal from "@/assets/nb/filtro-CP-Fenolica.jpg";
 import prodCupula from "@/assets/nb/Filtro-cupula-Aluminio-com-dreno.jpg";
 import prodAlta from "@/assets/nb/Filtro-Alta-Vazao.jpg";
-import prodNbf from "@/assets/nb/NBF-28.jpg";
+import prodNbf28 from "@/assets/nb/NBF-28.jpg";
+import prodNbf14 from "@/assets/nb/NBF-14-1.jpg";
+import prodNbf13 from "@/assets/nb/Filtro-NBF-13.jpg";
+import prodCpInox from "@/assets/nb/Filtro-CP-Tela-inox.jpg";
+import prod50b from "@/assets/nb/Filtro-50-b.jpg";
 
 export const Route = createFileRoute("/produtos")({
   head: () => ({
     meta: [
       { title: "Produtos — New Borges Filtros" },
-      { name: "description", content: "Linha completa de filtros e elementos filtrantes: coalescentes, cúpulas, alta vazão e linha NBF." },
+      { name: "description", content: "Catálogo completo: 17 modelos de filtros e elementos filtrantes coalescentes hidrofóbicos e filtros turbo diesel." },
       { property: "og:title", content: "Produtos — New Borges Filtros" },
-      { property: "og:description", content: "Conheça nossa linha completa de filtros e elementos filtrantes industriais." },
+      { property: "og:description", content: "Conheça a linha completa de filtros New Borges." },
     ],
   }),
   component: Produtos,
 });
 
-const linhas = [
-  {
-    title: "Elementos Coalescentes Hidrofóbicos",
-    desc: "Separação de água e impurezas com máxima eficiência. Ideais para filtragem de combustível em aviação e usinas.",
-    img: prodCoal,
-    items: ["NBF-23FM", "NBF-21PP", "NBF-11", "NBF-10PP"],
-  },
-  {
-    title: "Filtros Cúpula em Alumínio",
-    desc: "Carcaças resistentes com dreno integrado para aplicações em fazendas, postos e operações de campo.",
-    img: prodCupula,
-    items: ["Cúpula com dreno", "Cúpula CP Fenólica", "Cúpula CP Tela Inox"],
-  },
-  {
-    title: "Filtros de Alta Vazão",
-    desc: "Soluções para grandes volumes, com perda de carga reduzida e elevada capacidade de retenção.",
-    img: prodAlta,
-    items: ["Filtro 50-B", "Filtro 50-B com braçadeira", "Linha Alta Vazão"],
-  },
-  {
-    title: "Linha NBF",
-    desc: "Filtros de linha completa para os mais diversos sistemas de abastecimento e transferência de fluidos.",
-    img: prodNbf,
-    items: ["NBF-13", "NBF-14", "NBF-28"],
-  },
+const coalescentes = [
+  { name: "NBF-07", img: prodNbf13 },
+  { name: "NBF-08PF", img: prodCoal },
+  { name: "NBF-10DL", img: prodCupula },
+  { name: "NBF-10PP", img: prodCpInox },
+  { name: "NBF-11", img: prodNbf14 },
+  { name: "NBF-21PP", img: prodCoal },
+  { name: "NBF-23FM", img: prodCupula },
+  { name: "NBF-28FL", img: prodNbf28 },
+  { name: "NBF-29TP", img: prodNbf13 },
+  { name: "NBF-30TI", img: prodCpInox },
+  { name: "NBF-40PP", img: prodNbf14 },
+  { name: "NBF-4MS", img: prodCoal },
+  { name: "NBF-3MS", img: prodNbf28 },
+];
+
+const turbo = [
+  { name: "FILTRO TURBO DIESEL 10 B", img: prod50b },
+  { name: "FILTRO TURBO DIESEL 40 B", img: prodAlta },
+  { name: "FILTRO TURBO DIESEL 50 B", img: prod50b },
+  { name: "FILTRO TURBO DIESEL 50 V", img: prodAlta },
 ];
 
 function Produtos() {
@@ -50,29 +50,52 @@ function Produtos() {
       <section className="relative bg-hero px-6 lg:px-12 pt-20 pb-16">
         <div className="absolute inset-0 grid-pattern opacity-50" />
         <div className="relative max-w-[1400px] mx-auto">
-          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Catálogo</div>
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Catálogo completo</div>
           <h1 className="font-display text-5xl md:text-6xl font-bold max-w-3xl">Nossos <span className="text-gradient">produtos</span>.</h1>
-          <p className="mt-5 text-muted-foreground max-w-2xl">Confiabilidade, inovação e excelência. Conheça a linha New Borges de filtros e elementos filtrantes para os mais variados segmentos.</p>
+          <p className="mt-5 text-muted-foreground max-w-2xl">17 modelos de filtros e elementos filtrantes para os mais variados segmentos. Confiabilidade, inovação e excelência em cada peça.</p>
         </div>
       </section>
 
-      <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto space-y-10">
-        {linhas.map((l, i) => (
-          <div key={l.title} className={`grid lg:grid-cols-2 gap-8 items-center rounded-3xl bg-gradient-card border border-border p-6 md:p-10 shadow-soft ${i % 2 ? "lg:[&>*:first-child]:order-2" : ""}`}>
-            <div className="aspect-square rounded-2xl overflow-hidden bg-background border border-border">
-              <img src={l.img} alt={l.title} loading="lazy" width={800} height={800} className="w-full h-full object-cover" />
+      <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto">
+        <div className="mb-10">
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Linha NBF</div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold">Elementos Coalescentes Hidrofóbicos</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl">Separação eficiente de água e impurezas em sistemas de abastecimento de combustível.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {coalescentes.map(p => (
+            <div key={p.name} className="group rounded-2xl overflow-hidden bg-gradient-card border border-border hover:border-primary/50 transition shadow-soft">
+              <div className="aspect-square overflow-hidden bg-background">
+                <img src={p.img} alt={p.name} loading="lazy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              </div>
+              <div className="p-5">
+                <span className="inline-block text-[10px] uppercase tracking-wider text-primary border border-primary/30 bg-primary/5 rounded-full px-2.5 py-1">Coalescente</span>
+                <h3 className="mt-3 font-display font-semibold leading-snug">Elemento Coalescente Hidrofóbico {p.name}</h3>
+              </div>
             </div>
-            <div>
-              <h2 className="font-display text-3xl md:text-4xl font-bold leading-tight">{l.title}</h2>
-              <p className="mt-4 text-muted-foreground">{l.desc}</p>
-              <ul className="mt-6 grid grid-cols-2 gap-2">
-                {l.items.map(it => (
-                  <li key={it} className="text-sm rounded-lg border border-border bg-surface-elevated px-3 py-2.5 hover:border-primary/50 transition">{it}</li>
-                ))}
-              </ul>
+          ))}
+        </div>
+      </section>
+
+      <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto">
+        <div className="mb-10">
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Linha Turbo Diesel</div>
+          <h2 className="font-display text-3xl md:text-4xl font-bold">Filtros Turbo Diesel</h2>
+          <p className="mt-3 text-muted-foreground max-w-2xl">Alta vazão e robustez para operações de campo e abastecimento de frotas.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+          {turbo.map(p => (
+            <div key={p.name} className="group rounded-2xl overflow-hidden bg-gradient-card border border-border hover:border-primary/50 transition shadow-soft">
+              <div className="aspect-square overflow-hidden bg-background">
+                <img src={p.img} alt={p.name} loading="lazy" width={600} height={600} className="w-full h-full object-cover group-hover:scale-105 transition duration-500" />
+              </div>
+              <div className="p-5">
+                <span className="inline-block text-[10px] uppercase tracking-wider text-primary border border-primary/30 bg-primary/5 rounded-full px-2.5 py-1">Turbo Diesel</span>
+                <h3 className="mt-3 font-display font-semibold leading-snug">{p.name}</h3>
+              </div>
             </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </section>
     </Layout>
   );

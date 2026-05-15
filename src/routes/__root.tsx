@@ -76,7 +76,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { name: "description", content: "Fabricação de filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação." },
       { name: "author", content: "New Borges" },
       { property: "og:title", content: "New Borges — Filtros Industriais" },
-      { property: "og:description", content: "Há mais de 10 anos no mercado de filtros e elementos filtrantes." },
+      { property: "og:description", content: "Há 11 anos no mercado de filtros e elementos filtrantes." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary" },
       { name: "twitter:site", content: "@Lovable" },

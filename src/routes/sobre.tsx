@@ -6,7 +6,7 @@ export const Route = createFileRoute("/sobre")({
   head: () => ({
     meta: [
       { title: "Sobre nós — New Borges Filtros" },
-      { name: "description", content: "Conheça a New Borges: mais de 10 anos fabricando filtros industriais com qualidade, inovação e excelência." },
+      { name: "description", content: "Conheça a New Borges: 11 anos fabricando filtros industriais com qualidade, inovação e excelência." },
       { property: "og:title", content: "Sobre a New Borges" },
       { property: "og:description", content: "Mais de uma década protegendo sistemas de abastecimento com filtros de alta performance." },
     ],

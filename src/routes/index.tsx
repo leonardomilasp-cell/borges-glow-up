@@ -15,7 +15,7 @@ export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "New Borges — Filtros e Elementos Filtrantes Industriais" },
-      { name: "description", content: "Há mais de 10 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação." },
+      { name: "description", content: "Há 11 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação." },
       { property: "og:title", content: "New Borges — Filtros Industriais" },
       { property: "og:description", content: "Filtros e elementos filtrantes de alta performance. Confiabilidade, inovação e excelência." },
     ],
@@ -47,8 +47,8 @@ function Index() {
           <div className="lg:col-span-7">
             <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-4 py-1.5 text-xs">
               <Sparkles className="size-3.5 text-primary" />
-              <span className="text-muted-foreground">Há mais de</span>
-              <span className="font-semibold text-foreground">10 anos no mercado</span>
+              <span className="text-muted-foreground">Há</span>
+              <span className="font-semibold text-foreground">11 anos no mercado</span>
             </div>
             <h1 className="mt-6 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
               Filtros que <span className="text-gradient">protegem</span> a sua operação.
