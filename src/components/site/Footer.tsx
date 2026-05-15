@@ -13,7 +13,7 @@ export function Footer() {
             </div>
           </div>
           <p className="mt-5 text-sm text-muted-foreground max-w-md">
-            Há mais de 10 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação.
+            Há 11 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação.
           </p>
         </div>
         <div>
