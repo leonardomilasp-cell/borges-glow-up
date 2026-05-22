@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import hero from "@/assets/nb/deposito.jpg";
+import hero from "@/assets/nb/produtos-hero.png";
 import segFazendas from "@/assets/seg-fazendas.jpg";
 import segTrans from "@/assets/seg-transportadoras.jpg";
 import segUsinas from "@/assets/seg-usinas.jpg";
@@ -79,10 +79,11 @@ function Index() {
           </div>
           <div className="lg:col-span-5 relative">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
-            <div className="relative rounded-3xl overflow-hidden border border-border shadow-elegant">
-              <img src={hero} alt="Filtro industrial New Borges" width={1600} height={1200} className="w-full h-auto" />
+            <div className="relative">
+              <img src={hero} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
             </div>
           </div>
+
         </div>
       </section>
 
@@ -207,6 +208,32 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* VÍDEOS */}
+      <section className="px-6 lg:px-12 py-24 max-w-[1400px] mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Conteúdo</div>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">Vídeos explicativos dos nossos produtos</h2>
+          <p className="mt-5 text-muted-foreground">Conheça em detalhes a linha New Borges e veja nossos filtros em funcionamento.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {["T0S_mHM4od4", "F_e2MjbHRn0", "v9Rza5JpViI", "u-rSd6cJnXM"].map(id => (
+            <div key={id} className="rounded-2xl overflow-hidden border border-border bg-gradient-card shadow-soft">
+              <div className="relative aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title="Vídeo New Borges"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </Layout>
   );
 }
