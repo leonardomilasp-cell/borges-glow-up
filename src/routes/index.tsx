@@ -79,10 +79,11 @@ function Index() {
           </div>
           <div className="lg:col-span-5 relative">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
-            <div className="relative rounded-3xl overflow-hidden border border-border shadow-elegant">
-              <img src={hero} alt="Filtro industrial New Borges" width={1600} height={1200} className="w-full h-auto" />
+            <div className="relative">
+              <img src={hero} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
             </div>
           </div>
+
         </div>
       </section>
 
