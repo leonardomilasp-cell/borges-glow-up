@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import hero from "@/assets/nb/deposito.jpg";
+import hero from "@/assets/nb/produtos-hero.png";
 import segFazendas from "@/assets/seg-fazendas.jpg";
 import segTrans from "@/assets/seg-transportadoras.jpg";
 import segUsinas from "@/assets/seg-usinas.jpg";
