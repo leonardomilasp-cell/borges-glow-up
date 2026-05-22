@@ -208,6 +208,32 @@ function Index() {
           </div>
         </div>
       </section>
+
+      {/* VÍDEOS */}
+      <section className="px-6 lg:px-12 py-24 max-w-[1400px] mx-auto">
+        <div className="text-center max-w-2xl mx-auto mb-14">
+          <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Conteúdo</div>
+          <h2 className="font-display text-4xl md:text-5xl font-bold">Vídeos explicativos dos nossos produtos</h2>
+          <p className="mt-5 text-muted-foreground">Conheça em detalhes a linha New Borges e veja nossos filtros em funcionamento.</p>
+        </div>
+        <div className="grid sm:grid-cols-2 gap-6">
+          {["T0S_mHM4od4", "F_e2MjbHRn0", "v9Rza5JpViI", "u-rSd6cJnXM"].map(id => (
+            <div key={id} className="rounded-2xl overflow-hidden border border-border bg-gradient-card shadow-soft">
+              <div className="relative aspect-video">
+                <iframe
+                  src={`https://www.youtube.com/embed/${id}`}
+                  title="Vídeo New Borges"
+                  loading="lazy"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                  className="absolute inset-0 w-full h-full"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
     </Layout>
   );
 }
