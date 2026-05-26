@@ -1,6 +1,6 @@
 import { createFileRoute, Link, notFound } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
-import { getProdutoBySlug, produtos } from "@/data/produtos";
+import { getProdutoBySlug, produtos, type Produto } from "@/data/produtos";
 
 export const Route = createFileRoute("/produtos/$slug")({
   head: ({ params }) => {
