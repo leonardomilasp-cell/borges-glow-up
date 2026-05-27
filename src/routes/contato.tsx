@@ -64,7 +64,7 @@ function Contato() {
             <label className="text-xs uppercase tracking-wider text-muted-foreground">Mensagem</label>
             <textarea required rows={5} className="mt-1.5 w-full rounded-xl bg-surface-elevated border border-border px-4 py-3 outline-none focus:border-primary transition" placeholder="Descreva o filtro ou aplicação..." />
           </div>
-          <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+          <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" onClick={() => setSent(true)} className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
             {sent ? "Mensagem enviada ✓" : (<>Enviar mensagem <Send className="size-4" /></>)}
           </a>
         </form>
