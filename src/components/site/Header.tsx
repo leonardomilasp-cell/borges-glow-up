@@ -39,9 +39,9 @@ export function Header() {
             </Link>
           ))}
         </nav>
-        <Link to="/contato" className="hidden md:inline-flex items-center rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+        <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="hidden md:inline-flex items-center rounded-full bg-gradient-primary px-5 py-2.5 text-sm font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
           Solicitar orçamento
-        </Link>
+        </a>
         <button className="md:hidden p-2" onClick={() => setOpen(!open)} aria-label="Menu">
           {open ? <X /> : <Menu />}
         </button>
@@ -51,7 +51,7 @@ export function Header() {
           {nav.map(n => (
             <Link key={n.to} to={n.to} onClick={() => setOpen(false)} className="py-1 text-foreground/90">{n.label}</Link>
           ))}
-          <Link to="/contato" onClick={() => setOpen(false)} className="mt-2 inline-flex justify-center rounded-full bg-gradient-primary px-4 py-2.5 font-semibold text-primary-foreground">Orçamento</Link>
+          <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" onClick={() => setOpen(false)} className="mt-2 inline-flex justify-center rounded-full bg-gradient-primary px-4 py-2.5 font-semibold text-primary-foreground">Orçamento</a>
         </div>
       )}
     </header>
