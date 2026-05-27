@@ -31,7 +31,7 @@ function Contato() {
       <section className="px-6 lg:px-12 py-20 max-w-[1400px] mx-auto grid lg:grid-cols-5 gap-8">
         <div className="lg:col-span-2 space-y-4">
           {[
-            { icon: Phone, label: "Telefone", value: "(43) 3354-2494", href: "tel:+554333542494" },
+            { icon: Phone, label: "Telefone", value: "(43) 3354-2494", href: "https://wa.link/x20tj3" },
             { icon: Mail, label: "E-mail", value: "contato@newborges.com.br", href: "mailto:contato@newborges.com.br" },
             { icon: MapPin, label: "Endereço", value: "Cambé — Paraná, Brasil" },
             { icon: Instagram, label: "Instagram", value: "@newborgesoficial", href: "https://www.instagram.com/newborgesoficial/" },
@@ -64,9 +64,9 @@ function Contato() {
             <label className="text-xs uppercase tracking-wider text-muted-foreground">Mensagem</label>
             <textarea required rows={5} className="mt-1.5 w-full rounded-xl bg-surface-elevated border border-border px-4 py-3 outline-none focus:border-primary transition" placeholder="Descreva o filtro ou aplicação..." />
           </div>
-          <button type="submit" className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+          <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="mt-6 inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
             {sent ? "Mensagem enviada ✓" : (<>Enviar mensagem <Send className="size-4" /></>)}
-          </button>
+          </a>
         </form>
       </section>
     </Layout>
