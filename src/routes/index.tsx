@@ -57,9 +57,9 @@ function Index() {
               Fabricamos filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação. Confiabilidade, inovação e excelência em cada peça.
             </p>
             <div className="mt-9 flex flex-wrap gap-3">
-              <Link to="/contato" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+              <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
                 Solicitar orçamento <ArrowRight className="size-4" />
-              </Link>
+              </a>
               <Link to="/produtos" className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/40 backdrop-blur px-6 py-3.5 font-semibold hover:border-primary transition">
                 Ver produtos
               </Link>
@@ -198,10 +198,10 @@ function Index() {
             </h2>
             <p className="mt-5 text-primary-foreground/80 max-w-xl mx-auto">Atendimento rápido, orçamento sem compromisso e a melhor logística do mercado.</p>
             <div className="mt-8 flex flex-wrap justify-center gap-3">
-              <Link to="/contato" className="inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3.5 font-semibold hover:opacity-90 transition">
+              <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-background text-foreground px-6 py-3.5 font-semibold hover:opacity-90 transition">
                 Solicitar orçamento <ArrowRight className="size-4" />
-              </Link>
-              <a href="tel:+554333542494" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 text-primary-foreground px-6 py-3.5 font-semibold hover:bg-primary-foreground/10 transition">
+              </a>
+              <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-primary-foreground/30 text-primary-foreground px-6 py-3.5 font-semibold hover:bg-primary-foreground/10 transition">
                 (43) 3354-2494
               </a>
             </div>

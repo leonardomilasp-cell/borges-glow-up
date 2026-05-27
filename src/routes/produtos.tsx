@@ -1,4 +1,4 @@
-import { createFileRoute, Link } from "@tanstack/react-router";
+import { createFileRoute, Link, Outlet, useLocation } from "@tanstack/react-router";
 import { useState } from "react";
 import { Layout } from "@/components/site/Layout";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
@@ -19,7 +19,12 @@ export const Route = createFileRoute("/produtos")({
 type Filter = "Todos" | Categoria;
 
 function Produtos() {
+  const location = useLocation();
   const [filter, setFilter] = useState<Filter>("Todos");
+  const isProductDetail = location.pathname !== "/produtos";
+
+  if (isProductDetail) return <Outlet />;
+
   const lista = filter === "Todos" ? produtos : produtos.filter((p) => p.category === filter);
 
   return (
@@ -35,7 +40,7 @@ function Produtos() {
             Com a New Borges, você abastece com a certeza de que está protegendo seu equipamento e seu investimento.
           </p>
           <a
-            href="https://w.app/newborges"
+            href="https://wa.link/x20tj3"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center mt-6 px-5 py-2.5 rounded-full bg-primary text-primary-foreground font-medium shadow-soft hover:opacity-90 transition"
