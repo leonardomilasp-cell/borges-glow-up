@@ -1,4 +1,4 @@
-import { createFileRoute, Link, notFound } from "@tanstack/react-router";
+import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { getProdutoBySlug, produtos, type Produto } from "@/data/produtos";
 
@@ -34,19 +34,31 @@ export const Route = createFileRoute("/produtos/$slug")({
       </section>
     </Layout>
   ),
-  errorComponent: ({ error, reset }) => (
+  errorComponent: ProdutoError,
+  component: ProdutoDetalhe,
+});
+
+function ProdutoError({ error, reset }: { error: Error; reset: () => void }) {
+  const router = useRouter();
+
+  return (
     <Layout>
       <section className="px-6 lg:px-12 py-24 max-w-3xl mx-auto text-center">
         <h1 className="font-display text-3xl font-bold mb-4">Erro ao carregar o produto</h1>
         <p className="text-muted-foreground mb-6">{error.message}</p>
-        <button onClick={reset} className="text-primary font-medium hover:underline">
+        <button
+          onClick={() => {
+            router.invalidate();
+            reset();
+          }}
+          className="text-primary font-medium hover:underline"
+        >
           Tentar novamente
         </button>
       </section>
     </Layout>
-  ),
-  component: ProdutoDetalhe,
-});
+  );
+}
 
 function ProdutoDetalhe() {
   const { produto: p } = Route.useLoaderData() as { produto: Produto };
@@ -97,7 +109,7 @@ function ProdutoDetalhe() {
             )}
 
             <a
-              href="https://w.app/newborges"
+              href="https://wa.link/x20tj3"
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center mt-8 px-6 py-3 rounded-full bg-primary text-primary-foreground font-medium shadow-soft hover:opacity-90 transition"
