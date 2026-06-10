@@ -21,11 +21,18 @@ export interface Equivalencia {
   modelo: string;
 }
 
+export interface Secao {
+  title: string;
+  text?: string;
+  items?: string[];
+}
+
 export interface Produto {
   slug: string;
   name: string;
   category: Categoria;
   img: string;
+  gallery?: string[];
   shortDescription: string;
   longDescription?: string;
   dimensional?: string[];
@@ -36,6 +43,7 @@ export interface Produto {
   aplicacao?: string;
   equivalencias?: Equivalencia[];
   destaques?: string[];
+  secoes?: Secao[];
 }
 
 export const produtos: Produto[] = [
