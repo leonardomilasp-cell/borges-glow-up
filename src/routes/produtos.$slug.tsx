@@ -258,6 +258,47 @@ function ProdutoDetalhe() {
           </div>
         )}
       </section>
+
+      {lightbox !== null && (
+        <div
+          className="fixed inset-0 z-[100] bg-black/90 flex items-center justify-center p-4"
+          onClick={() => setLightbox(null)}
+          role="dialog"
+          aria-modal="true"
+        >
+          <button
+            type="button"
+            onClick={(e) => { e.stopPropagation(); setLightbox(null); }}
+            className="absolute top-4 right-4 text-white/90 hover:text-white text-3xl leading-none w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+            aria-label="Fechar"
+          >×</button>
+          {gallery.length > 1 && (
+            <>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); setLightbox((i) => i === null ? i : (i - 1 + gallery.length) % gallery.length); }}
+                className="absolute left-4 top-1/2 -translate-y-1/2 text-white/90 hover:text-white text-4xl w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+                aria-label="Anterior"
+              >‹</button>
+              <button
+                type="button"
+                onClick={(e) => { e.stopPropagation(); setLightbox((i) => i === null ? i : (i + 1) % gallery.length); }}
+                className="absolute right-4 top-1/2 -translate-y-1/2 text-white/90 hover:text-white text-4xl w-12 h-12 flex items-center justify-center rounded-full bg-white/10 hover:bg-white/20"
+                aria-label="Próxima"
+              >›</button>
+            </>
+          )}
+          <img
+            src={gallery[lightbox]}
+            alt={`${p.name} — imagem ${lightbox + 1}`}
+            onClick={(e) => e.stopPropagation()}
+            className="max-w-[95vw] max-h-[90vh] object-contain rounded-lg"
+          />
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-white/80 text-sm bg-black/40 px-3 py-1 rounded-full">
+            {lightbox + 1} / {gallery.length}
+          </div>
+        </div>
+      )}
     </Layout>
   );
 }
