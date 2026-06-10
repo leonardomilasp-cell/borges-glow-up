@@ -176,6 +176,30 @@ function ProdutoDetalhe() {
           </div>
         )}
 
+        {p.secoes && p.secoes.length > 0 && (
+          <div className="mt-16 space-y-8">
+            {p.secoes.map((s) => (
+              <div key={s.title} className="rounded-2xl border border-border bg-gradient-card p-6 md:p-8">
+                <h2 className="font-display text-2xl font-bold mb-3">{s.title}</h2>
+                {s.text && (
+                  <p className="text-muted-foreground leading-relaxed mb-3">{s.text}</p>
+                )}
+                {s.items && s.items.length > 0 && (
+                  <ul className="space-y-2">
+                    {s.items.map((it) => (
+                      <li key={it} className="flex items-start gap-2 text-sm">
+                        <span className="mt-1.5 inline-block size-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
+
         {related.length > 0 && (
           <div className="mt-20">
             <h2 className="font-display text-2xl font-bold mb-6">Produtos relacionados</h2>
