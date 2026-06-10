@@ -276,7 +276,15 @@ export const produtos: Produto[] = [
     name: "Caixa Separadora de Água e Óleo S.A.O. 1500",
     category: "Caixa separadora",
     img: caixaSaoHero,
-    gallery: [caixaSaoHero, caixaSaoInterno, caixaSaoProduto],
+    gallery: [
+      caixaSaoHero,
+      sao57.url, sao58.url, sao59.url, sao60.url, sao61.url, sao62.url,
+      sao63.url, sao64.url, sao65.url, sao66.url, sao67.url, sao68.url,
+      sao69.url, sao71.url, sao72.url, sao73.url, sao74.url, sao75.url,
+      sao76.url, sao77.url, sao78.url, sao79.url, sao80.url, sao81.url,
+      sao82.url, sao83.url, sao84.url,
+      caixaSaoInterno, caixaSaoProduto,
+    ],
     shortDescription:
       "Equipamento ecologicamente correto para separação de água e óleo em postos, oficinas, indústrias e lava-rápidos — vazão até 1.500 L/h.",
     longDescription:
