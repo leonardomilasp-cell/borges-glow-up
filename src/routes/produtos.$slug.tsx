@@ -65,6 +65,24 @@ function ProdutoDetalhe() {
   const { produto: p } = Route.useLoaderData() as { produto: Produto };
   const related = produtos.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
   const gallery = p.gallery && p.gallery.length > 0 ? p.gallery : [p.img];
+  const [active, setActive] = useState(0);
+  const [lightbox, setLightbox] = useState<number | null>(null);
+
+  useEffect(() => {
+    if (lightbox === null) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setLightbox(null);
+      if (e.key === "ArrowRight") setLightbox((i) => (i === null ? i : (i + 1) % gallery.length));
+      if (e.key === "ArrowLeft") setLightbox((i) => (i === null ? i : (i - 1 + gallery.length) % gallery.length));
+    };
+    window.addEventListener("keydown", onKey);
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prev;
+    };
+  }, [lightbox, gallery.length]);
 
   return (
     <Layout>
@@ -81,27 +99,43 @@ function ProdutoDetalhe() {
       <section className="px-6 lg:px-12 pb-16 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div className="space-y-4">
-            <div className="rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft">
+            <button
+              type="button"
+              onClick={() => setLightbox(active)}
+              className="block w-full rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft cursor-zoom-in group"
+              aria-label="Ampliar imagem"
+            >
               <img
-                src={gallery[0]}
+                src={gallery[active]}
                 alt={p.name}
-                className="w-full h-full object-contain aspect-square bg-background"
+                className="w-full h-full object-contain aspect-square bg-background transition group-hover:scale-[1.02]"
               />
-            </div>
+            </button>
             {gallery.length > 1 && (
-              <div className="grid grid-cols-3 gap-3">
-                {gallery.slice(1).map((src, i) => (
-                  <div key={i} className="rounded-2xl overflow-hidden bg-background border border-border">
+              <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
+                {gallery.map((src, i) => (
+                  <button
+                    key={i}
+                    type="button"
+                    onClick={() => setActive(i)}
+                    onDoubleClick={() => setLightbox(i)}
+                    className={`rounded-xl overflow-hidden bg-background border transition ${
+                      i === active ? "border-primary ring-2 ring-primary/30" : "border-border hover:border-primary/50"
+                    }`}
+                    aria-label={`Ver imagem ${i + 1}`}
+                  >
                     <img
                       src={src}
-                      alt={`${p.name} — imagem ${i + 2}`}
-                      className="w-full h-full object-contain aspect-square"
+                      alt={`${p.name} — imagem ${i + 1}`}
+                      loading="lazy"
+                      className="w-full h-full object-cover aspect-square"
                     />
-                  </div>
+                  </button>
                 ))}
               </div>
             )}
           </div>
+
 
           <div>
             <span className="inline-block text-[10px] uppercase tracking-wider text-primary border border-primary/30 bg-primary/5 rounded-full px-2.5 py-1">
