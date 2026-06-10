@@ -10,6 +10,9 @@ import nbf21pp from "@/assets/nb/produtos/nbf-21pp.png";
 import nbf11 from "@/assets/nb/produtos/nbf-11.png";
 import nbf10pp from "@/assets/nb/produtos/nbf-10pp.png";
 import nbf3ms from "@/assets/nb/produtos/nbf-3ms.png";
+import caixaSaoHero from "@/assets/nb/produtos/caixa-sao-1500-hero.jpg";
+import caixaSaoInterno from "@/assets/nb/produtos/caixa-sao-1500-interno.jpg";
+import caixaSaoProduto from "@/assets/nb/produtos/caixa-sao-1500-produto.jpg";
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
