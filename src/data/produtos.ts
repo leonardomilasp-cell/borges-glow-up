@@ -13,6 +13,33 @@ import nbf3ms from "@/assets/nb/produtos/nbf-3ms.png";
 import caixaSaoHero from "@/assets/nb/produtos/caixa-sao-1500-hero.jpg";
 import caixaSaoInterno from "@/assets/nb/produtos/caixa-sao-1500-interno.jpg";
 import caixaSaoProduto from "@/assets/nb/produtos/caixa-sao-1500-produto.jpg";
+import sao57 from "@/assets/nb/produtos/sao/sao-57.jpg.asset.json";
+import sao58 from "@/assets/nb/produtos/sao/sao-58.jpg.asset.json";
+import sao59 from "@/assets/nb/produtos/sao/sao-59.jpg.asset.json";
+import sao60 from "@/assets/nb/produtos/sao/sao-60.jpg.asset.json";
+import sao61 from "@/assets/nb/produtos/sao/sao-61.jpg.asset.json";
+import sao62 from "@/assets/nb/produtos/sao/sao-62.jpg.asset.json";
+import sao63 from "@/assets/nb/produtos/sao/sao-63.jpg.asset.json";
+import sao64 from "@/assets/nb/produtos/sao/sao-64.jpg.asset.json";
+import sao65 from "@/assets/nb/produtos/sao/sao-65.jpg.asset.json";
+import sao66 from "@/assets/nb/produtos/sao/sao-66.jpg.asset.json";
+import sao67 from "@/assets/nb/produtos/sao/sao-67.jpg.asset.json";
+import sao68 from "@/assets/nb/produtos/sao/sao-68.jpg.asset.json";
+import sao69 from "@/assets/nb/produtos/sao/sao-69.jpg.asset.json";
+import sao71 from "@/assets/nb/produtos/sao/sao-71.jpg.asset.json";
+import sao72 from "@/assets/nb/produtos/sao/sao-72.jpg.asset.json";
+import sao73 from "@/assets/nb/produtos/sao/sao-73.jpg.asset.json";
+import sao74 from "@/assets/nb/produtos/sao/sao-74.jpg.asset.json";
+import sao75 from "@/assets/nb/produtos/sao/sao-75.jpg.asset.json";
+import sao76 from "@/assets/nb/produtos/sao/sao-76.jpg.asset.json";
+import sao77 from "@/assets/nb/produtos/sao/sao-77.jpg.asset.json";
+import sao78 from "@/assets/nb/produtos/sao/sao-78.jpg.asset.json";
+import sao79 from "@/assets/nb/produtos/sao/sao-79.jpg.asset.json";
+import sao80 from "@/assets/nb/produtos/sao/sao-80.jpg.asset.json";
+import sao81 from "@/assets/nb/produtos/sao/sao-81.jpg.asset.json";
+import sao82 from "@/assets/nb/produtos/sao/sao-82.jpg.asset.json";
+import sao83 from "@/assets/nb/produtos/sao/sao-83.jpg.asset.json";
+import sao84 from "@/assets/nb/produtos/sao/sao-84.jpg.asset.json";
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
@@ -249,7 +276,15 @@ export const produtos: Produto[] = [
     name: "Caixa Separadora de Água e Óleo S.A.O. 1500",
     category: "Caixa separadora",
     img: caixaSaoHero,
-    gallery: [caixaSaoHero, caixaSaoInterno, caixaSaoProduto],
+    gallery: [
+      caixaSaoHero,
+      sao57.url, sao58.url, sao59.url, sao60.url, sao61.url, sao62.url,
+      sao63.url, sao64.url, sao65.url, sao66.url, sao67.url, sao68.url,
+      sao69.url, sao71.url, sao72.url, sao73.url, sao74.url, sao75.url,
+      sao76.url, sao77.url, sao78.url, sao79.url, sao80.url, sao81.url,
+      sao82.url, sao83.url, sao84.url,
+      caixaSaoInterno, caixaSaoProduto,
+    ],
     shortDescription:
       "Equipamento ecologicamente correto para separação de água e óleo em postos, oficinas, indústrias e lava-rápidos — vazão até 1.500 L/h.",
     longDescription:
