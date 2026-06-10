@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
 import { Layout } from "@/components/site/Layout";
 import { getProdutoBySlug, produtos, type Produto } from "@/data/produtos";
