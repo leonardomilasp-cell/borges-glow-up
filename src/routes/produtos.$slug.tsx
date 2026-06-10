@@ -63,6 +63,7 @@ function ProdutoError({ error, reset }: { error: Error; reset: () => void }) {
 function ProdutoDetalhe() {
   const { produto: p } = Route.useLoaderData() as { produto: Produto };
   const related = produtos.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
+  const gallery = p.gallery && p.gallery.length > 0 ? p.gallery : [p.img];
 
   return (
     <Layout>
@@ -78,12 +79,27 @@ function ProdutoDetalhe() {
 
       <section className="px-6 lg:px-12 pb-16 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
-          <div className="rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft">
-            <img
-              src={p.img}
-              alt={p.name}
-              className="w-full h-full object-contain aspect-square bg-background"
-            />
+          <div className="space-y-4">
+            <div className="rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft">
+              <img
+                src={gallery[0]}
+                alt={p.name}
+                className="w-full h-full object-contain aspect-square bg-background"
+              />
+            </div>
+            {gallery.length > 1 && (
+              <div className="grid grid-cols-3 gap-3">
+                {gallery.slice(1).map((src, i) => (
+                  <div key={i} className="rounded-2xl overflow-hidden bg-background border border-border">
+                    <img
+                      src={src}
+                      alt={`${p.name} — imagem ${i + 2}`}
+                      className="w-full h-full object-contain aspect-square"
+                    />
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
           <div>
@@ -159,6 +175,30 @@ function ProdutoDetalhe() {
             </div>
           </div>
         )}
+
+        {p.secoes && p.secoes.length > 0 && (
+          <div className="mt-16 space-y-8">
+            {p.secoes.map((s) => (
+              <div key={s.title} className="rounded-2xl border border-border bg-gradient-card p-6 md:p-8">
+                <h2 className="font-display text-2xl font-bold mb-3">{s.title}</h2>
+                {s.text && (
+                  <p className="text-muted-foreground leading-relaxed mb-3">{s.text}</p>
+                )}
+                {s.items && s.items.length > 0 && (
+                  <ul className="space-y-2">
+                    {s.items.map((it) => (
+                      <li key={it} className="flex items-start gap-2 text-sm">
+                        <span className="mt-1.5 inline-block size-1.5 rounded-full bg-primary flex-shrink-0" />
+                        <span>{it}</span>
+                      </li>
+                    ))}
+                  </ul>
+                )}
+              </div>
+            ))}
+          </div>
+        )}
+
 
         {related.length > 0 && (
           <div className="mt-20">

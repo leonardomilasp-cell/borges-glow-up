@@ -10,6 +10,9 @@ import nbf21pp from "@/assets/nb/produtos/nbf-21pp.png";
 import nbf11 from "@/assets/nb/produtos/nbf-11.png";
 import nbf10pp from "@/assets/nb/produtos/nbf-10pp.png";
 import nbf3ms from "@/assets/nb/produtos/nbf-3ms.png";
+import caixaSaoHero from "@/assets/nb/produtos/caixa-sao-1500-hero.jpg";
+import caixaSaoInterno from "@/assets/nb/produtos/caixa-sao-1500-interno.jpg";
+import caixaSaoProduto from "@/assets/nb/produtos/caixa-sao-1500-produto.jpg";
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
@@ -18,11 +21,18 @@ export interface Equivalencia {
   modelo: string;
 }
 
+export interface Secao {
+  title: string;
+  text?: string;
+  items?: string[];
+}
+
 export interface Produto {
   slug: string;
   name: string;
   category: Categoria;
   img: string;
+  gallery?: string[];
   shortDescription: string;
   longDescription?: string;
   dimensional?: string[];
@@ -33,6 +43,7 @@ export interface Produto {
   aplicacao?: string;
   equivalencias?: Equivalencia[];
   destaques?: string[];
+  secoes?: Secao[];
 }
 
 export const produtos: Produto[] = [
@@ -235,19 +246,62 @@ export const produtos: Produto[] = [
   },
   {
     slug: "caixa-separadora-agua-oleo",
-    name: "Caixa Separadora Água/Óleo",
+    name: "Caixa Separadora de Água e Óleo S.A.O. 1500",
     category: "Caixa separadora",
-    img: turbo50v,
+    img: caixaSaoHero,
+    gallery: [caixaSaoHero, caixaSaoInterno, caixaSaoProduto],
     shortDescription:
-      "Caixa separadora desenvolvida para remover óleos e graxas de efluentes antes do descarte ou reuso.",
+      "Equipamento ecologicamente correto para separação de água e óleo em postos, oficinas, indústrias e lava-rápidos — vazão até 1.500 L/h.",
     longDescription:
-      "Equipamento utilizado em postos de combustíveis, oficinas mecânicas, lava-rápidos e indústrias para separar água e óleo, atendendo às exigências ambientais vigentes.",
+      "A Caixa Separadora de Água e Óleo New Borges Ambiental S.A.O. 1500 é indicada para locais que geram efluentes oleosos, como postos de abastecimento, oficinas mecânicas, lavadores, indústrias, fazendas e transportadoras. Produzida em polietileno de alta densidade pelo processo de rotomoldagem, confere ao produto alta resistência, estanqueidade e impermeabilidade, atendendo aos parâmetros da NBR 14.605-2:2010 — Sistema de drenagem oleosa.",
+    vazao: "Até 1.500 L/h",
     aplicacao:
-      "Postos de combustíveis, oficinas mecânicas, lava-rápidos e indústrias.",
+      "Postos de abastecimento, oficinas mecânicas, lavadores, indústrias, fazendas e transportadoras.",
+    dimensional: [
+      "Entrada e saída: Ø 50 mm",
+      "Com tampa: 845 × 560 × 690 mm (C × L × A)",
+      "Sem tampa: 815 × 552 × 655 mm (C × L × A)",
+    ],
+    construcao:
+      "Polietileno de alta densidade pelo processo de rotomoldagem — alta resistência, estanqueidade e impermeabilidade.",
     destaques: [
-      "Atende normas ambientais",
-      "Alta eficiência de separação",
-      "Construção robusta",
+      "Vazão de até 1.500 L/h",
+      "Atende a NBR 14.605-2:2010",
+      "Equipamento ecologicamente correto",
+      "Placas coalescentes laváveis (reutilizáveis)",
+      "Skimmer ajustável para coleta de óleo",
+      "Cesto coletor para retenção de detritos",
+    ],
+    secoes: [
+      {
+        title: "Componentes",
+        items: [
+          "01 Cesto coletor — sistema de gradeamento",
+          "01 Dupla camada de placas coalescentes laváveis — retenção de óleo",
+          "01 Skimmer ajustável — coleta de óleo",
+          "01 Reservatório de óleo",
+          "Entrada e saída em Ø 50 mm",
+          "Parafusos e porcas de plástico (trava divisória da entrada)",
+        ],
+      },
+      {
+        title: "Funcionamento",
+        text: "A caixa separadora limita o lançamento de efluentes contaminados com óleos e graxas na rede de esgoto, dentro dos padrões exigidos pela NBR 14.605. O processo é totalmente físico e ocorre em quatro etapas:",
+        items: [
+          "Gradeamento — retém partículas maiores (gravetos, folhas, bituca de cigarro).",
+          "Coalescência — dupla camada de placas coalescentes separa o óleo da água.",
+          "Coleta do óleo — skimmer ajustável drena o óleo separado para o reservatório.",
+          "Saída — efluente livre de sólidos e óleo, dentro dos padrões exigidos.",
+        ],
+      },
+      {
+        title: "Instalação",
+        text: "O dimensionamento e a instalação devem seguir a NBR 14.605-2:2010. A S.A.O. deve receber toda a água contaminada pelas canaletas do piso e não deve receber águas pluviais. É instalada em vala com berço de alvenaria, nivelada pelo centro, com inclinação mínima de 2% no tubo de entrada. Antes de liberar o funcionamento, encher a caixa com água limpa até o nível máximo.",
+      },
+      {
+        title: "Manutenção e limpeza",
+        text: "Drenagem periódica do óleo pelo skimmer e retirada dos detritos do cesto coletor. A limpeza completa envolve retirar as placas coalescentes, lavá-las com água limpa e reinstalar. A periodicidade depende do volume de contaminantes — iniciar mensalmente e ajustar conforme a operação.",
+      },
     ],
   },
 ];
