@@ -71,6 +71,7 @@ export interface Produto {
   equivalencias?: Equivalencia[];
   destaques?: string[];
   secoes?: Secao[];
+  videoUrl?: string;
 }
 
 export const produtos: Produto[] = [
