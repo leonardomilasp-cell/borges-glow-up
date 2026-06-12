@@ -339,6 +339,7 @@ export const produtos: Produto[] = [
         text: "Drenagem periódica do óleo pelo skimmer e retirada dos detritos do cesto coletor. A limpeza completa envolve retirar as placas coalescentes, lavá-las com água limpa e reinstalar. A periodicidade depende do volume de contaminantes — iniciar mensalmente e ajustar conforme a operação.",
       },
     ],
+    videoUrl: "https://www.youtube.com/embed/v9Rza5JpViI",
   },
 ];
 
