@@ -235,6 +235,21 @@ function ProdutoDetalhe() {
         )}
 
 
+        {p.videoUrl && (
+          <div className="mt-16">
+            <h2 className="font-display text-2xl font-bold mb-4">Vídeo do produto</h2>
+            <div className="rounded-2xl overflow-hidden border border-border shadow-soft aspect-video bg-black">
+              <iframe
+                src={p.videoUrl}
+                title={`Vídeo — ${p.name}`}
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowFullScreen
+                className="w-full h-full"
+              />
+            </div>
+          </div>
+        )}
+
         {related.length > 0 && (
           <div className="mt-20">
             <h2 className="font-display text-2xl font-bold mb-6">Produtos relacionados</h2>
