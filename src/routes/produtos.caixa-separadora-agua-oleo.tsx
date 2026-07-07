@@ -468,6 +468,3 @@ function FaqItem({ q, a }: { q: string; a: string }) {
     </div>
   );
 }
-
-// Ensure effect import is used to satisfy tree-shaking analyzers (no-op)
-void useEffect;
