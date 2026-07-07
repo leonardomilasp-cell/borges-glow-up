@@ -13,6 +13,7 @@ import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ProdutosRouteImport } from './routes/produtos'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProdutosCaixaSeparadoraAguaOleoRouteImport } from './routes/produtos.caixa-separadora-agua-oleo'
 import { Route as ProdutosSlugRouteImport } from './routes/produtos.$slug'
 
 const SobreRoute = SobreRouteImport.update({
@@ -35,6 +36,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProdutosCaixaSeparadoraAguaOleoRoute =
+  ProdutosCaixaSeparadoraAguaOleoRouteImport.update({
+    id: '/caixa-separadora-agua-oleo',
+    path: '/caixa-separadora-agua-oleo',
+    getParentRoute: () => ProdutosRoute,
+  } as any)
 const ProdutosSlugRoute = ProdutosSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -47,6 +54,7 @@ export interface FileRoutesByFullPath {
   '/produtos': typeof ProdutosRouteWithChildren
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
+  '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -54,6 +62,7 @@ export interface FileRoutesByTo {
   '/produtos': typeof ProdutosRouteWithChildren
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
+  '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -62,13 +71,33 @@ export interface FileRoutesById {
   '/produtos': typeof ProdutosRouteWithChildren
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
+  '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/contato' | '/produtos' | '/sobre' | '/produtos/$slug'
+  fullPaths:
+    | '/'
+    | '/contato'
+    | '/produtos'
+    | '/sobre'
+    | '/produtos/$slug'
+    | '/produtos/caixa-separadora-agua-oleo'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/contato' | '/produtos' | '/sobre' | '/produtos/$slug'
-  id: '__root__' | '/' | '/contato' | '/produtos' | '/sobre' | '/produtos/$slug'
+  to:
+    | '/'
+    | '/contato'
+    | '/produtos'
+    | '/sobre'
+    | '/produtos/$slug'
+    | '/produtos/caixa-separadora-agua-oleo'
+  id:
+    | '__root__'
+    | '/'
+    | '/contato'
+    | '/produtos'
+    | '/sobre'
+    | '/produtos/$slug'
+    | '/produtos/caixa-separadora-agua-oleo'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -108,6 +137,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/produtos/caixa-separadora-agua-oleo': {
+      id: '/produtos/caixa-separadora-agua-oleo'
+      path: '/caixa-separadora-agua-oleo'
+      fullPath: '/produtos/caixa-separadora-agua-oleo'
+      preLoaderRoute: typeof ProdutosCaixaSeparadoraAguaOleoRouteImport
+      parentRoute: typeof ProdutosRoute
+    }
     '/produtos/$slug': {
       id: '/produtos/$slug'
       path: '/$slug'
@@ -120,10 +156,12 @@ declare module '@tanstack/react-router' {
 
 interface ProdutosRouteChildren {
   ProdutosSlugRoute: typeof ProdutosSlugRoute
+  ProdutosCaixaSeparadoraAguaOleoRoute: typeof ProdutosCaixaSeparadoraAguaOleoRoute
 }
 
 const ProdutosRouteChildren: ProdutosRouteChildren = {
   ProdutosSlugRoute: ProdutosSlugRoute,
+  ProdutosCaixaSeparadoraAguaOleoRoute: ProdutosCaixaSeparadoraAguaOleoRoute,
 }
 
 const ProdutosRouteWithChildren = ProdutosRoute._addFileChildren(
