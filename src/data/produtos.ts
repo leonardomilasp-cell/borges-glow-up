@@ -203,7 +203,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-21pp",
     name: "Elemento Coalescente Hidrofóbico NBF-21PP",
     category: "Elemento filtrante",
-    img: nbf21pp,
+    img: nbf21ppMont.url,
+    gallery: [nbf21ppMont.url, nbf21pp1.url, nbf21pp2.url, nbf21pp3.url],
     shortDescription:
       "Alto desempenho na separação de água e retenção de partículas.",
     destaques: ["Construção robusta", "Longa vida útil"],
