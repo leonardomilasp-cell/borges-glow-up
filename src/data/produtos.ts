@@ -222,7 +222,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-10pp",
     name: "Elemento Coalescente Hidrofóbico NBF-10PP",
     category: "Elemento filtrante",
-    img: nbf10pp,
+    img: nbf10ppMont.url,
+    gallery: [nbf10ppMont.url, nbf10pp1.url, nbf10pp2.url, nbf10pp3.url],
     shortDescription:
       "Elemento separador de partículas sólidas, água e óleo combustível.",
     longDescription:
