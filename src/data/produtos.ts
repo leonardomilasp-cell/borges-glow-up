@@ -40,6 +40,11 @@ import sao81 from "@/assets/nb/produtos/sao/sao-81.jpg.asset.json";
 import sao82 from "@/assets/nb/produtos/sao/sao-82.jpg.asset.json";
 import sao83 from "@/assets/nb/produtos/sao/sao-83.jpg.asset.json";
 import sao84 from "@/assets/nb/produtos/sao/sao-84.jpg.asset.json";
+import saoNewCover from "@/assets/nb/produtos/sao/sao-new-cover.png.asset.json";
+import saoNewInterno1 from "@/assets/nb/produtos/sao/sao-new-interno-1.png.asset.json";
+import saoNewInterno2 from "@/assets/nb/produtos/sao/sao-new-interno-2.png.asset.json";
+import saoNewAberta from "@/assets/nb/produtos/sao/sao-new-aberta.png.asset.json";
+import saoNewManual from "@/assets/nb/produtos/sao/sao-new-manual.png.asset.json";
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
