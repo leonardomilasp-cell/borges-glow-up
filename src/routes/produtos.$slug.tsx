@@ -99,18 +99,39 @@ function ProdutoDetalhe() {
       <section className="px-6 lg:px-12 pb-16 max-w-[1400px] mx-auto">
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <div className="space-y-4">
-            <button
-              type="button"
-              onClick={() => setLightbox(active)}
-              className="block w-full rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft cursor-zoom-in group"
-              aria-label="Ampliar imagem"
-            >
-              <img
-                src={gallery[active]}
-                alt={p.name}
-                className="w-full h-full object-contain aspect-square bg-background transition group-hover:scale-[1.02]"
-              />
-            </button>
+            <div className="relative">
+              <button
+                type="button"
+                onClick={() => setLightbox(active)}
+                className="block w-full rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft cursor-zoom-in group"
+                aria-label="Ampliar imagem"
+              >
+                <img
+                  src={gallery[active]}
+                  alt={p.name}
+                  className="w-full h-full object-contain aspect-square bg-background transition group-hover:scale-[1.02]"
+                />
+              </button>
+              {gallery.length > 1 && (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setActive((i) => (i - 1 + gallery.length) % gallery.length)}
+                    className="absolute left-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-foreground shadow-soft border border-border text-2xl leading-none transition"
+                    aria-label="Imagem anterior"
+                  >‹</button>
+                  <button
+                    type="button"
+                    onClick={() => setActive((i) => (i + 1) % gallery.length)}
+                    className="absolute right-3 top-1/2 -translate-y-1/2 w-11 h-11 flex items-center justify-center rounded-full bg-white/90 hover:bg-white text-foreground shadow-soft border border-border text-2xl leading-none transition"
+                    aria-label="Próxima imagem"
+                  >›</button>
+                  <div className="absolute bottom-3 left-1/2 -translate-x-1/2 text-xs bg-black/60 text-white px-2.5 py-1 rounded-full">
+                    {active + 1} / {gallery.length}
+                  </div>
+                </>
+              )}
+            </div>
             {gallery.length > 1 && (
               <div className="grid grid-cols-4 sm:grid-cols-5 gap-2">
                 {gallery.map((src, i) => (
@@ -135,6 +156,7 @@ function ProdutoDetalhe() {
               </div>
             )}
           </div>
+
 
 
           <div>
