@@ -46,6 +46,24 @@ import saoNewInterno2 from "@/assets/nb/produtos/sao/sao-new-interno-2.png.asset
 import saoNewAberta from "@/assets/nb/produtos/sao/sao-new-aberta.png.asset.json";
 import saoNewManual from "@/assets/nb/produtos/sao/sao-new-manual.png.asset.json";
 
+import nbf08pfMont from "@/assets/nb/produtos/elementos/nbf-08pf-NBF-08PF-montagem.jpg.asset.json";
+import nbf08pf1 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7193.jpg.asset.json";
+import nbf08pf2 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7195.jpg.asset.json";
+import nbf08pf3 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7197.jpg.asset.json";
+import nbf10ppMont from "@/assets/nb/produtos/elementos/nbf-10pp-NBF-10PP-montagem.jpg.asset.json";
+import nbf10pp1 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7146.jpg.asset.json";
+import nbf10pp2 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7147.jpg.asset.json";
+import nbf10pp3 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7148.jpg.asset.json";
+import nbf21ppMont from "@/assets/nb/produtos/elementos/nbf-21pp-NBF-21PP-montagem.jpg.asset.json";
+import nbf21pp1 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7137.jpg.asset.json";
+import nbf21pp2 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7139.jpg.asset.json";
+import nbf21pp3 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7141.jpg.asset.json";
+import nbf28flMont from "@/assets/nb/produtos/elementos/nbf-28fl-NBF-28FL-montagem.jpg.asset.json";
+import nbf28fl1 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7211.jpg.asset.json";
+import nbf28fl2 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7212.jpg.asset.json";
+import nbf28fl3 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7213.jpg.asset.json";
+
+
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
 export interface Equivalencia {
