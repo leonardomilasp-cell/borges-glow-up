@@ -267,7 +267,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-08pf",
     name: "Elemento Coalescente Hidrofóbico NBF-08PF",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf08pfMont.url,
+    gallery: [nbf08pfMont.url, nbf08pf1.url, nbf08pf2.url, nbf08pf3.url],
     shortDescription:
       "Remoção eficiente de água líquida, aerossóis e partículas sólidas em combustíveis.",
     destaques: ["Alta performance", "Remove aerossóis"],
