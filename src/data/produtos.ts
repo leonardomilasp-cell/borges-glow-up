@@ -182,7 +182,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",
     name: "Elemento Coalescente Hidrofóbico NBF-28FL",
     category: "Elemento filtrante",
-    img: nbf28fl,
+    img: nbf28flMont.url,
+    gallery: [nbf28flMont.url, nbf28fl1.url, nbf28fl2.url, nbf28fl3.url],
     shortDescription:
       "Máxima eficiência na separação de água e retenção de partículas em sistemas de combustível.",
     construcao: "Tampas em Nylon injetado, corpo e tubos em chapa expandida.",
