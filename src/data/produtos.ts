@@ -46,6 +46,24 @@ import saoNewInterno2 from "@/assets/nb/produtos/sao/sao-new-interno-2.png.asset
 import saoNewAberta from "@/assets/nb/produtos/sao/sao-new-aberta.png.asset.json";
 import saoNewManual from "@/assets/nb/produtos/sao/sao-new-manual.png.asset.json";
 
+import nbf08pfMont from "@/assets/nb/produtos/elementos/nbf-08pf-NBF-08PF-montagem.jpg.asset.json";
+import nbf08pf1 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7193.jpg.asset.json";
+import nbf08pf2 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7195.jpg.asset.json";
+import nbf08pf3 from "@/assets/nb/produtos/elementos/nbf-08pf-img-7197.jpg.asset.json";
+import nbf10ppMont from "@/assets/nb/produtos/elementos/nbf-10pp-NBF-10PP-montagem.jpg.asset.json";
+import nbf10pp1 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7146.jpg.asset.json";
+import nbf10pp2 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7147.jpg.asset.json";
+import nbf10pp3 from "@/assets/nb/produtos/elementos/nbf-10pp-img-7148.jpg.asset.json";
+import nbf21ppMont from "@/assets/nb/produtos/elementos/nbf-21pp-NBF-21PP-montagem.jpg.asset.json";
+import nbf21pp1 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7137.jpg.asset.json";
+import nbf21pp2 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7139.jpg.asset.json";
+import nbf21pp3 from "@/assets/nb/produtos/elementos/nbf-21pp-img-7141.jpg.asset.json";
+import nbf28flMont from "@/assets/nb/produtos/elementos/nbf-28fl-NBF-28FL-montagem.jpg.asset.json";
+import nbf28fl1 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7211.jpg.asset.json";
+import nbf28fl2 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7212.jpg.asset.json";
+import nbf28fl3 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7213.jpg.asset.json";
+
+
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
 export interface Equivalencia {
@@ -164,7 +182,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",
     name: "Elemento Coalescente Hidrofóbico NBF-28FL",
     category: "Elemento filtrante",
-    img: nbf28fl,
+    img: nbf28flMont.url,
+    gallery: [nbf28flMont.url, nbf28fl1.url, nbf28fl2.url, nbf28fl3.url],
     shortDescription:
       "Máxima eficiência na separação de água e retenção de partículas em sistemas de combustível.",
     construcao: "Tampas em Nylon injetado, corpo e tubos em chapa expandida.",
@@ -184,7 +203,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-21pp",
     name: "Elemento Coalescente Hidrofóbico NBF-21PP",
     category: "Elemento filtrante",
-    img: nbf21pp,
+    img: nbf21ppMont.url,
+    gallery: [nbf21ppMont.url, nbf21pp1.url, nbf21pp2.url, nbf21pp3.url],
     shortDescription:
       "Alto desempenho na separação de água e retenção de partículas.",
     destaques: ["Construção robusta", "Longa vida útil"],
@@ -202,7 +222,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-10pp",
     name: "Elemento Coalescente Hidrofóbico NBF-10PP",
     category: "Elemento filtrante",
-    img: nbf10pp,
+    img: nbf10ppMont.url,
+    gallery: [nbf10ppMont.url, nbf10pp1.url, nbf10pp2.url, nbf10pp3.url],
     shortDescription:
       "Elemento separador de partículas sólidas, água e óleo combustível.",
     longDescription:
@@ -246,7 +267,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-08pf",
     name: "Elemento Coalescente Hidrofóbico NBF-08PF",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf08pfMont.url,
+    gallery: [nbf08pfMont.url, nbf08pf1.url, nbf08pf2.url, nbf08pf3.url],
     shortDescription:
       "Remoção eficiente de água líquida, aerossóis e partículas sólidas em combustíveis.",
     destaques: ["Alta performance", "Remove aerossóis"],
