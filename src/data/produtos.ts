@@ -281,8 +281,9 @@ export const produtos: Produto[] = [
     slug: "caixa-separadora-agua-oleo",
     name: "Caixa Separadora de Água e Óleo S.A.O. 1500",
     category: "Caixa separadora",
-    img: caixaSaoHero,
+    img: saoNewCover.url,
     gallery: [
+      saoNewCover.url, saoNewAberta.url, saoNewInterno1.url, saoNewInterno2.url, saoNewManual.url,
       caixaSaoHero,
       sao57.url, sao58.url, sao59.url, sao60.url, sao61.url, sao62.url,
       sao63.url, sao64.url, sao65.url, sao66.url, sao67.url, sao68.url,
