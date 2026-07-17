@@ -182,8 +182,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",
     name: "Elemento Coalescente Hidrofóbico NBF-28FL",
     category: "Elemento filtrante",
-    img: nbf28flMont.url,
-    gallery: [nbf28flMont.url, nbf28fl1.url, nbf28fl2.url, nbf28fl3.url],
+    img: nbf28fl3.url,
+    gallery: [nbf28fl3.url, nbf28fl2.url, nbf28fl1.url, nbf28flMont.url],
     shortDescription:
       "Máxima eficiência na separação de água e retenção de partículas em sistemas de combustível.",
     construcao: "Tampas em Nylon injetado, corpo e tubos em chapa expandida.",
@@ -203,8 +203,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-21pp",
     name: "Elemento Coalescente Hidrofóbico NBF-21PP",
     category: "Elemento filtrante",
-    img: nbf21ppMont.url,
-    gallery: [nbf21ppMont.url, nbf21pp1.url, nbf21pp2.url, nbf21pp3.url],
+    img: nbf21pp3.url,
+    gallery: [nbf21pp3.url, nbf21pp2.url, nbf21pp1.url, nbf21ppMont.url],
     shortDescription:
       "Alto desempenho na separação de água e retenção de partículas.",
     destaques: ["Construção robusta", "Longa vida útil"],
@@ -222,8 +222,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-10pp",
     name: "Elemento Coalescente Hidrofóbico NBF-10PP",
     category: "Elemento filtrante",
-    img: nbf10ppMont.url,
-    gallery: [nbf10ppMont.url, nbf10pp1.url, nbf10pp2.url, nbf10pp3.url],
+    img: nbf10pp3.url,
+    gallery: [nbf10pp3.url, nbf10pp2.url, nbf10pp1.url, nbf10ppMont.url],
     shortDescription:
       "Elemento separador de partículas sólidas, água e óleo combustível.",
     longDescription:
@@ -267,8 +267,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-08pf",
     name: "Elemento Coalescente Hidrofóbico NBF-08PF",
     category: "Elemento filtrante",
-    img: nbf08pfMont.url,
-    gallery: [nbf08pfMont.url, nbf08pf1.url, nbf08pf2.url, nbf08pf3.url],
+    img: nbf08pf3.url,
+    gallery: [nbf08pf3.url, nbf08pf2.url, nbf08pf1.url, nbf08pfMont.url],
     shortDescription:
       "Remoção eficiente de água líquida, aerossóis e partículas sólidas em combustíveis.",
     destaques: ["Alta performance", "Remove aerossóis"],
