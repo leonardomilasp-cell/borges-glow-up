@@ -12,9 +12,12 @@ import {
   Clock,
   Award,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { getProdutoBySlug, type Produto } from "@/data/produtos";
+
 
 const SLUG = "caixa-separadora-agua-oleo";
 const WHATS = "https://wa.link/x20tj3";
