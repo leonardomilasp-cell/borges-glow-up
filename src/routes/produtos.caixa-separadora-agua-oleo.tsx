@@ -12,9 +12,12 @@ import {
   Clock,
   Award,
   ChevronDown,
+  ChevronLeft,
+  ChevronRight,
 } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { getProdutoBySlug, type Produto } from "@/data/produtos";
+
 
 const SLUG = "caixa-separadora-agua-oleo";
 const WHATS = "https://wa.link/x20tj3";
@@ -101,7 +104,7 @@ function CaixaSeparadoraLanding() {
         <div className="grid lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           {/* Gallery */}
           <div className="space-y-4">
-            <div className="relative rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft">
+            <div className="relative rounded-3xl overflow-hidden bg-gradient-card border border-border shadow-soft group">
               <span className="absolute top-4 left-4 z-10 inline-flex items-center gap-1.5 bg-green-600 text-white text-xs font-bold uppercase tracking-wider px-3 py-1.5 rounded-full shadow-lg">
                 <Zap className="size-3.5" /> Pronta Entrega
               </span>
@@ -110,27 +113,32 @@ function CaixaSeparadoraLanding() {
                 alt="Caixa Separadora de Água e Óleo S.A.O. 1500 — New Borges"
                 className="w-full h-full object-contain aspect-square bg-background"
               />
-            </div>
-            {gallery.length > 1 && (
-              <div className="grid grid-cols-5 md:grid-cols-6 gap-2">
-                {gallery.slice(0, 12).map((src, i) => (
+              {gallery.length > 1 && (
+                <>
                   <button
-                    key={i}
                     type="button"
-                    onClick={() => setActive(i)}
-                    className={`rounded-xl overflow-hidden bg-background border transition ${
-                      i === active
-                        ? "border-primary ring-2 ring-primary/30"
-                        : "border-border hover:border-primary/50"
-                    }`}
-                    aria-label={`Ver imagem ${i + 1}`}
+                    onClick={() => setActive((i) => (i - 1 + gallery.length) % gallery.length)}
+                    aria-label="Imagem anterior"
+                    className="absolute left-3 top-1/2 -translate-y-1/2 size-11 md:size-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-lg grid place-items-center text-foreground hover:text-primary transition"
                   >
-                    <img src={src} alt="" loading="lazy" className="w-full h-full object-cover aspect-square" />
+                    <ChevronLeft className="size-6" />
                   </button>
-                ))}
-              </div>
-            )}
+                  <button
+                    type="button"
+                    onClick={() => setActive((i) => (i + 1) % gallery.length)}
+                    aria-label="Próxima imagem"
+                    className="absolute right-3 top-1/2 -translate-y-1/2 size-11 md:size-12 rounded-full bg-background/90 hover:bg-background border border-border shadow-lg grid place-items-center text-foreground hover:text-primary transition"
+                  >
+                    <ChevronRight className="size-6" />
+                  </button>
+                  <div className="absolute bottom-4 left-1/2 -translate-x-1/2 bg-background/90 border border-border rounded-full px-3 py-1 text-xs font-medium text-foreground shadow">
+                    {active + 1} / {gallery.length}
+                  </div>
+                </>
+              )}
+            </div>
           </div>
+
 
           {/* Copy + CTA */}
           <div>
