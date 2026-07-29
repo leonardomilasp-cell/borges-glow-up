@@ -239,7 +239,7 @@ export const produtos: Produto[] = [
     areaFiltrante: "14959 cm²",
     equivalencias: [
       { marca: "PETROPURO", modelo: "SELCOM 100" },
-      { marca: "PURODIESEL", modelo: "FM 100" },
+      { marca: "PURODIESEL", modelo: "FC 100" },
       { marca: "ENGEMAI", modelo: "EC-5245" },
       { marca: "COMBOIO GASCOM", modelo: "SELCOM 100" },
       { marca: "ROMANELLI", modelo: "SELCOM 100" },
