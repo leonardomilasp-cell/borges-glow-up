@@ -13,6 +13,7 @@ import { Route as SobreRouteImport } from './routes/sobre'
 import { Route as ProdutosRouteImport } from './routes/produtos'
 import { Route as ContatoRouteImport } from './routes/contato'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as ProdutosElementoCoalescenteHidrofobicoNbf10ppRouteImport } from './routes/produtos.elemento-coalescente-hidrofobico-nbf-10pp'
 import { Route as ProdutosCaixaSeparadoraAguaOleoRouteImport } from './routes/produtos.caixa-separadora-agua-oleo'
 import { Route as ProdutosSlugRouteImport } from './routes/produtos.$slug'
 
@@ -36,6 +37,12 @@ const IndexRoute = IndexRouteImport.update({
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute =
+  ProdutosElementoCoalescenteHidrofobicoNbf10ppRouteImport.update({
+    id: '/elemento-coalescente-hidrofobico-nbf-10pp',
+    path: '/elemento-coalescente-hidrofobico-nbf-10pp',
+    getParentRoute: () => ProdutosRoute,
+  } as any)
 const ProdutosCaixaSeparadoraAguaOleoRoute =
   ProdutosCaixaSeparadoraAguaOleoRouteImport.update({
     id: '/caixa-separadora-agua-oleo',
@@ -55,6 +62,7 @@ export interface FileRoutesByFullPath {
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
   '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
+  '/produtos/elemento-coalescente-hidrofobico-nbf-10pp': typeof ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -63,6 +71,7 @@ export interface FileRoutesByTo {
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
   '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
+  '/produtos/elemento-coalescente-hidrofobico-nbf-10pp': typeof ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -72,6 +81,7 @@ export interface FileRoutesById {
   '/sobre': typeof SobreRoute
   '/produtos/$slug': typeof ProdutosSlugRoute
   '/produtos/caixa-separadora-agua-oleo': typeof ProdutosCaixaSeparadoraAguaOleoRoute
+  '/produtos/elemento-coalescente-hidrofobico-nbf-10pp': typeof ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -82,6 +92,7 @@ export interface FileRouteTypes {
     | '/sobre'
     | '/produtos/$slug'
     | '/produtos/caixa-separadora-agua-oleo'
+    | '/produtos/elemento-coalescente-hidrofobico-nbf-10pp'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -90,6 +101,7 @@ export interface FileRouteTypes {
     | '/sobre'
     | '/produtos/$slug'
     | '/produtos/caixa-separadora-agua-oleo'
+    | '/produtos/elemento-coalescente-hidrofobico-nbf-10pp'
   id:
     | '__root__'
     | '/'
@@ -98,6 +110,7 @@ export interface FileRouteTypes {
     | '/sobre'
     | '/produtos/$slug'
     | '/produtos/caixa-separadora-agua-oleo'
+    | '/produtos/elemento-coalescente-hidrofobico-nbf-10pp'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -137,6 +150,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/produtos/elemento-coalescente-hidrofobico-nbf-10pp': {
+      id: '/produtos/elemento-coalescente-hidrofobico-nbf-10pp'
+      path: '/elemento-coalescente-hidrofobico-nbf-10pp'
+      fullPath: '/produtos/elemento-coalescente-hidrofobico-nbf-10pp'
+      preLoaderRoute: typeof ProdutosElementoCoalescenteHidrofobicoNbf10ppRouteImport
+      parentRoute: typeof ProdutosRoute
+    }
     '/produtos/caixa-separadora-agua-oleo': {
       id: '/produtos/caixa-separadora-agua-oleo'
       path: '/caixa-separadora-agua-oleo'
@@ -157,11 +177,14 @@ declare module '@tanstack/react-router' {
 interface ProdutosRouteChildren {
   ProdutosSlugRoute: typeof ProdutosSlugRoute
   ProdutosCaixaSeparadoraAguaOleoRoute: typeof ProdutosCaixaSeparadoraAguaOleoRoute
+  ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute: typeof ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute
 }
 
 const ProdutosRouteChildren: ProdutosRouteChildren = {
   ProdutosSlugRoute: ProdutosSlugRoute,
   ProdutosCaixaSeparadoraAguaOleoRoute: ProdutosCaixaSeparadoraAguaOleoRoute,
+  ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute:
+    ProdutosElementoCoalescenteHidrofobicoNbf10ppRoute,
 }
 
 const ProdutosRouteWithChildren = ProdutosRoute._addFileChildren(
@@ -177,13 +200,3 @@ const rootRouteChildren: RootRouteChildren = {
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
   ._addFileTypes<FileRouteTypes>()
-
-import type { getRouter } from './router.tsx'
-import type { startInstance } from './start.ts'
-declare module '@tanstack/react-start' {
-  interface Register {
-    ssr: true
-    router: Awaited<ReturnType<typeof getRouter>>
-    config: Awaited<ReturnType<typeof startInstance.getOptions>>
-  }
-}
