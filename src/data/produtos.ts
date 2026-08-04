@@ -7,7 +7,6 @@ import nbf29tp from "@/assets/nb/produtos/nbf-29tp.png";
 import nbf28fl from "@/assets/nb/produtos/nbf-28fl.png";
 import nbf23fm from "@/assets/nb/produtos/nbf-23fm.png";
 import nbf21pp from "@/assets/nb/produtos/nbf-21pp.png";
-import nbf11 from "@/assets/nb/produtos/nbf-11.png";
 import nbf10pp from "@/assets/nb/produtos/nbf-10pp.png";
 import nbf3ms from "@/assets/nb/produtos/nbf-3ms.png";
 import sao53 from "@/assets/nb/produtos/sao-v2/sao-53.png.asset.json";
