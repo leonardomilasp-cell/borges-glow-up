@@ -7,7 +7,6 @@ import nbf29tp from "@/assets/nb/produtos/nbf-29tp.png";
 import nbf28fl from "@/assets/nb/produtos/nbf-28fl.png";
 import nbf23fm from "@/assets/nb/produtos/nbf-23fm.png";
 import nbf21pp from "@/assets/nb/produtos/nbf-21pp.png";
-import nbf11 from "@/assets/nb/produtos/nbf-11.png";
 import nbf10pp from "@/assets/nb/produtos/nbf-10pp.png";
 import nbf3ms from "@/assets/nb/produtos/nbf-3ms.png";
 import sao53 from "@/assets/nb/produtos/sao-v2/sao-53.png.asset.json";
@@ -61,6 +60,14 @@ import nbf28flMont from "@/assets/nb/produtos/elementos/nbf-28fl-NBF-28FL-montag
 import nbf28fl1 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7211.jpg.asset.json";
 import nbf28fl2 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7212.jpg.asset.json";
 import nbf28fl3 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7213.jpg.asset.json";
+import nbf10dlMont from "@/assets/nb/produtos/elementos/nbf-10dl-montagem_nbf-10dl.jpg.asset.json";
+import nbf10dl1 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0512.jpg.asset.json";
+import nbf10dl2 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0513.jpg.asset.json";
+import nbf10dl3 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0514.jpg.asset.json";
+import nbf11Mont from "@/assets/nb/produtos/elementos/nbf-11-montagem_nbf-10.jpg.asset.json";
+import nbf11a from "@/assets/nb/produtos/elementos/nbf-11-mg_0515.jpg.asset.json";
+import nbf11b from "@/assets/nb/produtos/elementos/nbf-11-mg_0516.jpg.asset.json";
+import nbf11c from "@/assets/nb/produtos/elementos/nbf-11-mg_0517.jpg.asset.json";
 
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
@@ -212,7 +219,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-11",
     name: "Elemento Coalescente Hidrofóbico NBF-11",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf11c.url,
+    gallery: [nbf11c.url, nbf11b.url, nbf11a.url, nbf11Mont.url],
     shortDescription:
       "Máxima eficiência na separação de água e retenção de contaminantes sólidos.",
     destaques: ["Alta eficiência", "Indicado para abastecimento"],
@@ -257,7 +265,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-10dl",
     name: "Elemento Coalescente Hidrofóbico NBF-10DL",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf10dl3.url,
+    gallery: [nbf10dl3.url, nbf10dl2.url, nbf10dl1.url, nbf10dlMont.url],
     shortDescription:
       "Elemento filtrante de alta robustez para remoção de água e contaminantes.",
     destaques: ["Alta robustez", "Elevada eficiência"],
