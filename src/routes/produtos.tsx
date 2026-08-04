@@ -21,7 +21,7 @@ type Filter = "Todos" | Categoria;
 function Produtos() {
   const location = useLocation();
   const [filter, setFilter] = useState<Filter>("Todos");
-  const isProductDetail = location.pathname !== "/produtos";
+  const isProductDetail = location.pathname.replace(/\/+$/, "") !== "/produtos";
 
   if (isProductDetail) return <Outlet />;
 
