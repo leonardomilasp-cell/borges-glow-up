@@ -220,7 +220,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-11",
     name: "Elemento Coalescente Hidrofóbico NBF-11",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf11c.url,
+    gallery: [nbf11c.url, nbf11b.url, nbf11a.url, nbf11Mont.url],
     shortDescription:
       "Máxima eficiência na separação de água e retenção de contaminantes sólidos.",
     destaques: ["Alta eficiência", "Indicado para abastecimento"],
@@ -265,7 +266,8 @@ export const produtos: Produto[] = [
     slug: "elemento-coalescente-hidrofobico-nbf-10dl",
     name: "Elemento Coalescente Hidrofóbico NBF-10DL",
     category: "Elemento filtrante",
-    img: nbf11,
+    img: nbf10dl3.url,
+    gallery: [nbf10dl3.url, nbf10dl2.url, nbf10dl1.url, nbf10dlMont.url],
     shortDescription:
       "Elemento filtrante de alta robustez para remoção de água e contaminantes.",
     destaques: ["Alta robustez", "Elevada eficiência"],
