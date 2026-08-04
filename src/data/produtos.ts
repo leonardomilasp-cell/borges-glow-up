@@ -61,6 +61,14 @@ import nbf28flMont from "@/assets/nb/produtos/elementos/nbf-28fl-NBF-28FL-montag
 import nbf28fl1 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7211.jpg.asset.json";
 import nbf28fl2 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7212.jpg.asset.json";
 import nbf28fl3 from "@/assets/nb/produtos/elementos/nbf-28fl-img-7213.jpg.asset.json";
+import nbf10dlMont from "@/assets/nb/produtos/elementos/nbf-10dl-montagem_nbf-10dl.jpg.asset.json";
+import nbf10dl1 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0512.jpg.asset.json";
+import nbf10dl2 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0513.jpg.asset.json";
+import nbf10dl3 from "@/assets/nb/produtos/elementos/nbf-10dl-mg_0514.jpg.asset.json";
+import nbf11Mont from "@/assets/nb/produtos/elementos/nbf-11-montagem_nbf-10.jpg.asset.json";
+import nbf11a from "@/assets/nb/produtos/elementos/nbf-11-mg_0515.jpg.asset.json";
+import nbf11b from "@/assets/nb/produtos/elementos/nbf-11-mg_0516.jpg.asset.json";
+import nbf11c from "@/assets/nb/produtos/elementos/nbf-11-mg_0517.jpg.asset.json";
 
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
