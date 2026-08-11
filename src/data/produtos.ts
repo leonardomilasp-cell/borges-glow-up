@@ -357,8 +357,27 @@ export const produtos: Produto[] = [
     img: nbf08pf3.url,
     gallery: [nbf08pf3.url, nbf08pf2.url, nbf08pf1.url, nbf08pfMont.url],
     shortDescription:
-      "Remoção eficiente de água líquida, aerossóis e partículas sólidas em combustíveis.",
-    destaques: ["Alta performance", "Remove aerossóis"],
+      "Elemento coalescente blindado com carcaça em aço e papel celulose plissado, para remoção de água e partículas sólidas.",
+    longDescription:
+      "O NBF-08PF é um elemento coalescente blindado, com carcaça em chapa de aço estampado revestida com material antioxidante e pintura epóxi. Seu meio filtrante em papel celulose plissado retém partículas de 15µ nominal e separa água líquida e aerossóis do combustível. Acompanha duas vedações.",
+    dimensional: ["Ø ext. = 128 mm", "Altura = 281 mm", "Rosca = 1.1/2\"-16UN"],
+    construcao:
+      "Tampas em chapa de aço estampado e zincado; tubo em chapa de aço perfurado e zincado; carcaça em chapa de aço estampado, revestida com material antioxidante e pintura em tinta epóxi. Acompanha duas vedações.",
+    meioFiltrante: "Papel celulose plissado — 15µ nominal.",
+    areaFiltrante: "7.452 cm²",
+    equivalencias: [
+      { marca: "AC DELCO", modelo: "PF1097" },
+      { marca: "CAMECO", modelo: "61308228" },
+      { marca: "CATERPILLAR", modelo: "3I1663" },
+      { marca: "MASSEY", modelo: "038610R1" },
+      { marca: "VOLVO", modelo: "12754597" },
+    ],
+    destaques: [
+      "Elemento blindado com carcaça em aço",
+      "15µ nominal",
+      "Área filtrante de 7.452 cm²",
+      "Acompanha duas vedações",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-07",
