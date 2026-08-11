@@ -1,7 +1,21 @@
-import turbo50v from "@/assets/nb/produtos/turbo-50v.jpg";
-import turbo50b from "@/assets/nb/produtos/turbo-50b.jpg";
-import turbo40b from "@/assets/nb/produtos/turbo-40b.jpg";
 import nbf40pp from "@/assets/nb/produtos/nbf-40pp.jpg";
+import td50v1 from "@/assets/nb/produtos/filtros/td50v-1.jpg.asset.json";
+import td50v2 from "@/assets/nb/produtos/filtros/td50v-2.jpg.asset.json";
+import td50v3 from "@/assets/nb/produtos/filtros/td50v-3.jpg.asset.json";
+import td50v4 from "@/assets/nb/produtos/filtros/td50v-4.jpg.asset.json";
+import td50v5 from "@/assets/nb/produtos/filtros/td50v-5.jpg.asset.json";
+import td10b1 from "@/assets/nb/produtos/filtros/td10b-1.jpg.asset.json";
+import td10b2 from "@/assets/nb/produtos/filtros/td10b-2.jpg.asset.json";
+import td10b3 from "@/assets/nb/produtos/filtros/td10b-3.jpg.asset.json";
+import td10b4 from "@/assets/nb/produtos/filtros/td10b-4.jpg.asset.json";
+import td40b1 from "@/assets/nb/produtos/filtros/td40b-1.jpg.asset.json";
+import td40b2 from "@/assets/nb/produtos/filtros/td40b-2.jpg.asset.json";
+import td40b3 from "@/assets/nb/produtos/filtros/td40b-3.jpg.asset.json";
+import td40b4 from "@/assets/nb/produtos/filtros/td40b-4.jpg.asset.json";
+import td40b5 from "@/assets/nb/produtos/filtros/td40b-5.jpg.asset.json";
+import td50b1 from "@/assets/nb/produtos/filtros/td50b-1.jpg.asset.json";
+import td50b2 from "@/assets/nb/produtos/filtros/td50b-2.jpg.asset.json";
+import td50b3 from "@/assets/nb/produtos/filtros/td50b-3.jpg.asset.json";
 import nbf30ti from "@/assets/nb/produtos/nbf-30ti.png";
 import nbf29tp from "@/assets/nb/produtos/nbf-29tp.png";
 import nbf28fl from "@/assets/nb/produtos/nbf-28fl.png";
@@ -108,50 +122,98 @@ export const produtos: Produto[] = [
     slug: "filtro-turbo-diesel-50-v",
     name: "FILTRO TURBO DIESEL 50 V",
     category: "Filtro",
-    img: turbo50v,
+    img: td50v1.url,
+    gallery: [td50v1.url, td50v2.url, td50v3.url, td50v4.url, td50v5.url],
     shortDescription:
-      "Filtração de óleo diesel em sistemas de grande porte com necessidade de alta vazão e instalação vertical.",
+      "Filtro desidratador da linha fazenda, com instalação vertical, para retirada de impurezas sólidas e água do óleo diesel.",
     longDescription:
-      "O Filtro Turbo Diesel 50 V é indicado para operações de abastecimento intensivo em sistemas de grande porte, oferecendo alta vazão e instalação vertical. Projetado para reter partículas sólidas e separar água do diesel, prolonga a vida útil do motor e dos injetores.",
-    vazao: "Alta vazão — recomendado para sistemas de grande porte",
-    aplicacao: "Postos internos, tanques de armazenamento e bombas de transferência.",
+      "O Filtro Turbo Diesel 50 V faz parte da linha de filtros desidratadores (Linha Fazenda) da New Borges. Trabalha com quatro elementos de polipropileno e retém partículas de até 25 micra, retirando impurezas sólidas e a água contida no diesel por decantação. Disponível com e sem visor.",
+    dimensional: ["Entrada e saída: 1.1/2\" rosca BSP"],
+    construcao: "Corpo em aço com pintura epóxi. Versões com e sem visor.",
+    meioFiltrante: "4 elementos de polipropileno.",
+    areaFiltrante: "Retenção de partículas: 25µ",
+    vazao: "83 LPM",
+    aplicacao:
+      "Postos internos, tanques de armazenamento, fazendas e bombas de transferência.",
     destaques: [
       "Instalação vertical",
-      "Alta vazão de filtragem",
-      "Compatível com elementos coalescentes da linha NBF",
+      "Vazão de 83 LPM",
+      "Retenção de partículas de 25 micra",
+      "Retira impurezas sólidas e água por decantação",
+      "Disponível com e sem visor",
     ],
   },
   {
     slug: "filtro-turbo-diesel-50-b",
     name: "FILTRO TURBO DIESEL 50 B",
     category: "Filtro",
-    img: turbo50b,
+    img: td50b1.url,
+    gallery: [td50b1.url, td50b2.url, td50b3.url],
     shortDescription:
-      "Filtração de óleo diesel em sistemas de altíssima vazão, para operações contínuas e severas.",
+      "Filtro desidratador da linha fazenda com quatro elementos de polipropileno para diesel limpo e livre de água.",
     longDescription:
-      "Indicado para operações contínuas e severas, como abastecimento de grandes frotas e tanques. Garante separação eficiente de água e retenção de partículas em altas vazões.",
-    aplicacao: "Grandes frotas, tanques de armazenamento e operações 24/7.",
-    destaques: ["Altíssima vazão", "Operação contínua", "Alta retenção de partículas"],
+      "O Filtro Turbo Diesel 50 B integra a linha de filtros desidratadores (Linha Fazenda). Utiliza quatro elementos de polipropileno com retenção de 25 micra, removendo impurezas sólidas e a água contida no diesel por decantação. Disponível com e sem visor.",
+    dimensional: ["Entrada e saída: 1.1/2\" rosca BSP"],
+    construcao: "Corpo em aço com pintura epóxi. Versões com e sem visor.",
+    meioFiltrante: "4 elementos de polipropileno.",
+    areaFiltrante: "Retenção de partículas: 25µ",
+    vazao: "83 LPM",
+    aplicacao: "Grandes frotas, tanques de armazenamento e operações contínuas.",
+    destaques: [
+      "Vazão de 83 LPM",
+      "Retenção de partículas de 25 micra",
+      "Quatro elementos de polipropileno",
+      "Retira impurezas sólidas e água por decantação",
+    ],
   },
   {
     slug: "filtro-turbo-diesel-40-b",
     name: "FILTRO TURBO DIESEL 40 B",
     category: "Filtro",
-    img: turbo40b,
+    img: td40b1.url,
+    gallery: [td40b1.url, td40b2.url, td40b3.url, td40b4.url, td40b5.url],
     shortDescription:
-      "Filtração de óleo diesel em sistemas de alto volume para abastecimento interno e tanques.",
+      "Filtro da linha coalescente para alto volume, com elemento de dupla filtragem 25µ e 5µ e vazão de 200 LPM.",
+    longDescription:
+      "O Filtro Turbo Diesel 40 B pertence à linha coalescente da New Borges. Trabalha com um elemento de dupla filtragem (1º estágio 25µ e 2º estágio 5µ), garantindo alta retenção de partículas e separação da água do diesel em sistemas de grande volume.",
+    dimensional: ["Entrada e saída: 2\" rosca BSP"],
+    construcao: "Corpo em aço com pintura epóxi e dreno para saída de água.",
+    meioFiltrante: "1 elemento com dupla filtragem.",
+    areaFiltrante: "Retenção de partículas: 25µ e 5µ",
+    vazao: "200 LPM",
     aplicacao: "Abastecimento interno, tanques de armazenamento e bombas de transferência.",
-    destaques: ["Alto volume", "Robusto e durável"],
+    destaques: [
+      "Vazão de 200 LPM",
+      "Dupla filtragem 25µ e 5µ",
+      "Entrada e saída de 2\" BSP",
+      "Robusto e durável",
+    ],
   },
   {
     slug: "filtro-turbo-diesel-10-b",
     name: "FILTRO TURBO DIESEL 10 B",
     category: "Filtro",
-    img: turbo40b,
+    img: td10b1.url,
+    gallery: [td10b1.url, td10b2.url, td10b3.url, td10b4.url],
     shortDescription:
-      "Filtração de óleo diesel para abastecimento interno, tanques, bombas e sistemas de transferência.",
-    destaques: ["Reduz impurezas", "Protege motores e injetores"],
+      "Filtro da linha coalescente com elemento de dupla filtragem 25µ e 5µ e vazão de 100 L/M.",
+    longDescription:
+      "O Filtro Turbo Diesel 10 B faz parte da linha coalescente da New Borges. Utiliza um elemento filtrante cilíndrico de dupla filtragem — 1º estágio de 25 micra e 2º estágio de 5 micra — com saída de água separada, protegendo motores, injetores e bombas.",
+    dimensional: ["Entrada e saída: 1.1/2\" rosca BSP"],
+    construcao: "Corpo em aço com pintura epóxi e dreno para saída de água.",
+    meioFiltrante: "1 elemento com dupla filtragem (elemento cilíndrico).",
+    areaFiltrante: "Retenção de partículas: 25µ e 5µ",
+    vazao: "100 L/M",
+    aplicacao:
+      "Abastecimento interno, tanques, bombas e sistemas de transferência de combustível.",
+    destaques: [
+      "Vazão de 100 L/M",
+      "Dupla filtragem 25µ e 5µ",
+      "Saída de água separada",
+      "Protege motores e injetores",
+    ],
   },
+
   {
     slug: "elemento-coalescente-hidrofobico-nbf-40pp",
     name: "Elemento Coalescente Hidrofóbico NBF-40PP",
@@ -191,10 +253,27 @@ export const produtos: Produto[] = [
     img: nbf28fl3.url,
     gallery: [nbf28fl3.url, nbf28fl2.url, nbf28fl1.url, nbf28flMont.url],
     shortDescription:
-      "Máxima eficiência na separação de água e retenção de partículas em sistemas de combustível.",
-    construcao: "Tampas em Nylon injetado, corpo e tubos em chapa expandida.",
-    meioFiltrante: "Dois estágios — celulose externo e aquablock interno.",
-    destaques: ["Alta eficiência", "Longa vida útil"],
+      "Filtro de combustível para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 10µ.",
+    longDescription:
+      "O NBF-28FL é um filtro de combustível desenvolvido para estações fixas de bombeamento. Possui meio filtrante em papel celulose plissado com silicone agregado, garantindo alta eficiência de retenção e longa vida útil. Não aplicável em veículos automotores.",
+    dimensional: ["Ø ext. = 110 mm", "Altura = 250 mm", "Rosca = 1.1/2\"-16 UN"],
+    construcao:
+      "Tampas em nylon injetadas e tubo interno do elemento em chapa de aço perfurado e zincado. Sem válvula by-pass e sem válvula anti-retorno.",
+    meioFiltrante:
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+    areaFiltrante: "7.452 cm²",
+    aplicacao:
+      "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
+    equivalencias: [
+      { marca: "NEWBORGES", modelo: "NBF-28" },
+      { marca: "FILTROSMAX", modelo: "MAX 80" },
+    ],
+    destaques: [
+      "Micronagem nominal de 10µ",
+      "Área filtrante de 7.452 cm²",
+      "Papel celulose com silicone agregado",
+      "Tampas em nylon injetadas",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-23fm",
@@ -278,8 +357,27 @@ export const produtos: Produto[] = [
     img: nbf08pf3.url,
     gallery: [nbf08pf3.url, nbf08pf2.url, nbf08pf1.url, nbf08pfMont.url],
     shortDescription:
-      "Remoção eficiente de água líquida, aerossóis e partículas sólidas em combustíveis.",
-    destaques: ["Alta performance", "Remove aerossóis"],
+      "Elemento coalescente blindado com carcaça em aço e papel celulose plissado, para remoção de água e partículas sólidas.",
+    longDescription:
+      "O NBF-08PF é um elemento coalescente blindado, com carcaça em chapa de aço estampado revestida com material antioxidante e pintura epóxi. Seu meio filtrante em papel celulose plissado retém partículas de 15µ nominal e separa água líquida e aerossóis do combustível. Acompanha duas vedações.",
+    dimensional: ["Ø ext. = 128 mm", "Altura = 281 mm", "Rosca = 1.1/2\"-16UN"],
+    construcao:
+      "Tampas em chapa de aço estampado e zincado; tubo em chapa de aço perfurado e zincado; carcaça em chapa de aço estampado, revestida com material antioxidante e pintura em tinta epóxi. Acompanha duas vedações.",
+    meioFiltrante: "Papel celulose plissado — 15µ nominal.",
+    areaFiltrante: "7.452 cm²",
+    equivalencias: [
+      { marca: "AC DELCO", modelo: "PF1097" },
+      { marca: "CAMECO", modelo: "61308228" },
+      { marca: "CATERPILLAR", modelo: "3I1663" },
+      { marca: "MASSEY", modelo: "038610R1" },
+      { marca: "VOLVO", modelo: "12754597" },
+    ],
+    destaques: [
+      "Elemento blindado com carcaça em aço",
+      "15µ nominal",
+      "Área filtrante de 7.452 cm²",
+      "Acompanha duas vedações",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-07",
