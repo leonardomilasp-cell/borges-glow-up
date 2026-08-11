@@ -253,10 +253,27 @@ export const produtos: Produto[] = [
     img: nbf28fl3.url,
     gallery: [nbf28fl3.url, nbf28fl2.url, nbf28fl1.url, nbf28flMont.url],
     shortDescription:
-      "Máxima eficiência na separação de água e retenção de partículas em sistemas de combustível.",
-    construcao: "Tampas em Nylon injetado, corpo e tubos em chapa expandida.",
-    meioFiltrante: "Dois estágios — celulose externo e aquablock interno.",
-    destaques: ["Alta eficiência", "Longa vida útil"],
+      "Filtro de combustível para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 10µ.",
+    longDescription:
+      "O NBF-28FL é um filtro de combustível desenvolvido para estações fixas de bombeamento. Possui meio filtrante em papel celulose plissado com silicone agregado, garantindo alta eficiência de retenção e longa vida útil. Não aplicável em veículos automotores.",
+    dimensional: ["Ø ext. = 110 mm", "Altura = 250 mm", "Rosca = 1.1/2\"-16 UN"],
+    construcao:
+      "Tampas em nylon injetadas e tubo interno do elemento em chapa de aço perfurado e zincado. Sem válvula by-pass e sem válvula anti-retorno.",
+    meioFiltrante:
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+    areaFiltrante: "7.452 cm²",
+    aplicacao:
+      "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
+    equivalencias: [
+      { marca: "NEWBORGES", modelo: "NBF-28" },
+      { marca: "FILTROSMAX", modelo: "MAX 80" },
+    ],
+    destaques: [
+      "Micronagem nominal de 10µ",
+      "Área filtrante de 7.452 cm²",
+      "Papel celulose com silicone agregado",
+      "Tampas em nylon injetadas",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-23fm",
