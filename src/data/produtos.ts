@@ -83,6 +83,57 @@ import nbf11a from "@/assets/nb/produtos/elementos/nbf-11-mg_0515.jpg.asset.json
 import nbf11b from "@/assets/nb/produtos/elementos/nbf-11-mg_0516.jpg.asset.json";
 import nbf11c from "@/assets/nb/produtos/elementos/nbf-11-mg_0517.jpg.asset.json";
 
+import e629a from "@/assets/nb/produtos/elementos2/mbf-629mf-mg_8617.jpg.asset.json";
+import e629b from "@/assets/nb/produtos/elementos2/mbf-629mf-mg_8618.jpg.asset.json";
+import e629m from "@/assets/nb/produtos/elementos2/mbf-629mf-montagem_mbf-629mf.jpg.asset.json";
+import e07a from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8649.jpg.asset.json";
+import e07b from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8650.jpg.asset.json";
+import e07c from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8656.jpg.asset.json";
+import e07m from "@/assets/nb/produtos/elementos2/nbf-07mf-montagem_nbf-07mf.jpg.asset.json";
+import e101a from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7126.jpg.asset.json";
+import e101b from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7127.jpg.asset.json";
+import e101m from "@/assets/nb/produtos/elementos2/nbf-101sf-nbf-101sf_montagem_01.jpg.asset.json";
+import e19a from "@/assets/nb/produtos/elementos2/nbf-19-mg_7225.jpg.asset.json";
+import e19b from "@/assets/nb/produtos/elementos2/nbf-19-mg_7226.jpg.asset.json";
+import e19c from "@/assets/nb/produtos/elementos2/nbf-19-mg_7227.jpg.asset.json";
+import e19m from "@/assets/nb/produtos/elementos2/nbf-19-03_montagem.jpg.asset.json";
+import e200a from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7218.jpg.asset.json";
+import e200b from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7221.jpg.asset.json";
+import e200c from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7222.jpg.asset.json";
+import e200m from "@/assets/nb/produtos/elementos2/nbf-200wt-nbf-200wt_montagem.jpg.asset.json";
+import e27a from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8581.jpg.asset.json";
+import e27b from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8582.jpg.asset.json";
+import e27c from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8583.jpg.asset.json";
+import e27d from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_7217.jpg.asset.json";
+import e27m from "@/assets/nb/produtos/elementos2/nbf-27fl-montagem_nbf-27fl.jpg.asset.json";
+import e48a from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7178.jpg.asset.json";
+import e48b from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7179.jpg.asset.json";
+import e48c from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7208.jpg.asset.json";
+import e48m from "@/assets/nb/produtos/elementos2/nbf-48pp-nbf-48pp_montagem.jpg.asset.json";
+import e49a from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7174.jpg.asset.json";
+import e49b from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7175.jpg.asset.json";
+import e49c from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7205.jpg.asset.json";
+import e49m from "@/assets/nb/produtos/elementos2/nbf-49pl-nbf-49pl_montagem.jpg.asset.json";
+import e50pla from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7173.jpg.asset.json";
+import e50plb from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7174.jpg.asset.json";
+import e50plc from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7175.jpg.asset.json";
+import e50plm from "@/assets/nb/produtos/elementos2/nbf-50pl-nbf-50pl_montagem.jpg.asset.json";
+import e50ppa from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7177.jpg.asset.json";
+import e50ppb from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7178.jpg.asset.json";
+import e50ppc from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7179.jpg.asset.json";
+import e50ppm from "@/assets/nb/produtos/elementos2/nbf-50pp-nbf-50pp_montagem.jpg.asset.json";
+import e60a from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0509.jpg.asset.json";
+import e60b from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0510.jpg.asset.json";
+import e60c from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0511.jpg.asset.json";
+import e60m from "@/assets/nb/produtos/elementos2/nbf-60tp-montagem_nbf-60tp.jpg.asset.json";
+import e70a from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7129.jpg.asset.json";
+import e70b from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7133.jpg.asset.json";
+import e70c from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7135.jpg.asset.json";
+import e70m from "@/assets/nb/produtos/elementos2/nbf-70tp-nbf-70tp_montagem_amarelo.jpg.asset.json";
+import e736a from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7111.jpg.asset.json";
+import e736b from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7115.jpg.asset.json";
+import e736m from "@/assets/nb/produtos/elementos2/nbf-736av-01_montagem.jpg.asset.json";
+
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
