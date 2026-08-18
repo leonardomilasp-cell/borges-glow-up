@@ -83,6 +83,57 @@ import nbf11a from "@/assets/nb/produtos/elementos/nbf-11-mg_0515.jpg.asset.json
 import nbf11b from "@/assets/nb/produtos/elementos/nbf-11-mg_0516.jpg.asset.json";
 import nbf11c from "@/assets/nb/produtos/elementos/nbf-11-mg_0517.jpg.asset.json";
 
+import e629a from "@/assets/nb/produtos/elementos2/mbf-629mf-mg_8617.jpg.asset.json";
+import e629b from "@/assets/nb/produtos/elementos2/mbf-629mf-mg_8618.jpg.asset.json";
+import e629m from "@/assets/nb/produtos/elementos2/mbf-629mf-montagem_mbf-629mf.jpg.asset.json";
+import e07a from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8649.jpg.asset.json";
+import e07b from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8650.jpg.asset.json";
+import e07c from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8656.jpg.asset.json";
+import e07m from "@/assets/nb/produtos/elementos2/nbf-07mf-montagem_nbf-07mf.jpg.asset.json";
+import e101a from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7126.jpg.asset.json";
+import e101b from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7127.jpg.asset.json";
+import e101m from "@/assets/nb/produtos/elementos2/nbf-101sf-nbf-101sf_montagem_01.jpg.asset.json";
+import e19a from "@/assets/nb/produtos/elementos2/nbf-19-mg_7225.jpg.asset.json";
+import e19b from "@/assets/nb/produtos/elementos2/nbf-19-mg_7226.jpg.asset.json";
+import e19c from "@/assets/nb/produtos/elementos2/nbf-19-mg_7227.jpg.asset.json";
+import e19m from "@/assets/nb/produtos/elementos2/nbf-19-03_montagem.jpg.asset.json";
+import e200a from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7218.jpg.asset.json";
+import e200b from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7221.jpg.asset.json";
+import e200c from "@/assets/nb/produtos/elementos2/nbf-200wt-mg_7222.jpg.asset.json";
+import e200m from "@/assets/nb/produtos/elementos2/nbf-200wt-nbf-200wt_montagem.jpg.asset.json";
+import e27a from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8581.jpg.asset.json";
+import e27b from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8582.jpg.asset.json";
+import e27c from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_8583.jpg.asset.json";
+import e27d from "@/assets/nb/produtos/elementos2/nbf-27fl-mg_7217.jpg.asset.json";
+import e27m from "@/assets/nb/produtos/elementos2/nbf-27fl-montagem_nbf-27fl.jpg.asset.json";
+import e48a from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7178.jpg.asset.json";
+import e48b from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7179.jpg.asset.json";
+import e48c from "@/assets/nb/produtos/elementos2/nbf-48pp-mg_7208.jpg.asset.json";
+import e48m from "@/assets/nb/produtos/elementos2/nbf-48pp-nbf-48pp_montagem.jpg.asset.json";
+import e49a from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7174.jpg.asset.json";
+import e49b from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7175.jpg.asset.json";
+import e49c from "@/assets/nb/produtos/elementos2/nbf-49pl-mg_7205.jpg.asset.json";
+import e49m from "@/assets/nb/produtos/elementos2/nbf-49pl-nbf-49pl_montagem.jpg.asset.json";
+import e50pla from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7173.jpg.asset.json";
+import e50plb from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7174.jpg.asset.json";
+import e50plc from "@/assets/nb/produtos/elementos2/nbf-50pl-mg_7175.jpg.asset.json";
+import e50plm from "@/assets/nb/produtos/elementos2/nbf-50pl-nbf-50pl_montagem.jpg.asset.json";
+import e50ppa from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7177.jpg.asset.json";
+import e50ppb from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7178.jpg.asset.json";
+import e50ppc from "@/assets/nb/produtos/elementos2/nbf-50pp-mg_7179.jpg.asset.json";
+import e50ppm from "@/assets/nb/produtos/elementos2/nbf-50pp-nbf-50pp_montagem.jpg.asset.json";
+import e60a from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0509.jpg.asset.json";
+import e60b from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0510.jpg.asset.json";
+import e60c from "@/assets/nb/produtos/elementos2/nbf-60tp-mg_0511.jpg.asset.json";
+import e60m from "@/assets/nb/produtos/elementos2/nbf-60tp-montagem_nbf-60tp.jpg.asset.json";
+import e70a from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7129.jpg.asset.json";
+import e70b from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7133.jpg.asset.json";
+import e70c from "@/assets/nb/produtos/elementos2/nbf-70tp-mg_7135.jpg.asset.json";
+import e70m from "@/assets/nb/produtos/elementos2/nbf-70tp-nbf-70tp_montagem_amarelo.jpg.asset.json";
+import e736a from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7111.jpg.asset.json";
+import e736b from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7115.jpg.asset.json";
+import e736m from "@/assets/nb/produtos/elementos2/nbf-736av-01_montagem.jpg.asset.json";
+
 
 export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
 
@@ -381,12 +432,36 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-07",
-    name: "Elemento Coalescente Hidrofóbico NBF-07",
+    name: "Elemento Coalescente Hidrofóbico NBF-07MF",
     category: "Elemento filtrante",
-    img: nbf10pp,
+    img: e07a.url,
+    gallery: [e07a.url, e07b.url, e07c.url, e07m.url],
     shortDescription:
-      "Remoção de água líquida, aerossóis e partículas em sistemas de combustíveis e fluidos.",
-    destaques: ["Alta eficiência"],
+      "Filtro blindado para estações fixas de bombeamento, com papel celulose siliconado, dreno plástico e micronagem nominal de 10µ.",
+    longDescription:
+      "O NBF-07MF é um filtro blindado desenvolvido para estações fixas de bombeamento de combustível. A carcaça estampada em aço recebe revestimento antioxidante e pintura epóxi, e o meio filtrante em papel celulose plissado com silicone agregado assegura alta eficiência de retenção. Possui dreno plástico para escoamento da água. Não aplicável em veículos automotores.",
+    dimensional: ["Ø ext. = 128 mm", "Altura = 277 mm", "Rosca = 1.1/2\"-16 UN"],
+    construcao:
+      "Tampas em chapa de aço estampado e zincado; tubo do elemento em chapa de aço perfurado e zincado; carcaça estampada em aço revestido de material antioxidante com pintura em tinta epóxi; vedação em borracha sintética; dreno plástico para escoamento da água. Sem válvula by-pass e sem válvula anti-retorno.",
+    meioFiltrante:
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+    areaFiltrante: "7.452 cm²",
+    aplicacao:
+      "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
+    equivalencias: [
+      { marca: "MAHLE FILTROIL", modelo: "FIL-07" },
+      { marca: "SULFILTROS", modelo: "SFMC 180" },
+      { marca: "FILTROSDIESEL", modelo: "TFELS-07" },
+      { marca: "TECFILTROS", modelo: "TFELS-07" },
+      { marca: "FILTECH", modelo: "FIL-07" },
+      { marca: "FILTRON", modelo: "FT-07" },
+    ],
+    destaques: [
+      "Filtro blindado com pintura epóxi",
+      "Micronagem nominal de 10µ",
+      "Área filtrante de 7.452 cm²",
+      "Dreno plástico para escoamento da água",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-4ms",
@@ -396,6 +471,352 @@ export const produtos: Produto[] = [
     shortDescription:
       "Cartucho de alta eficiência para remoção de aerossóis líquidos, umidade e sólidos em ar comprimido e gases.",
     destaques: ["Ar comprimido e gases", "Alta eficiência"],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-50pp",
+    name: "Elemento Coalescente Hidrofóbico NBF-50PP",
+    category: "Elemento filtrante",
+    img: e50ppa.url,
+    gallery: [e50ppa.url, e50ppb.url, e50ppc.url, e50ppm.url],
+    shortDescription:
+      "Elemento coalescedor/separador de dois estágios para óleo diesel, QAV e gasolina de aviação, com retenção de água <200 ppm.",
+    longDescription: "Elemento Coalescedor/Separador: tem a função de aglutinar as partículas de água contidas no combustível, o que acelera a sua decantação. O processo é realizado em duas fases, através de dois meios filtrantes distintos. Além disso, o elemento retém as partículas sólidas contidas no combustível. Econômico, compacto e de fácil manutenção, pode ser utilizado em óleo diesel, querosene de aviação ou gasolina de aviação. Importante: não pode ser utilizado em meio fluido que contenha álcool.",
+    dimensional: ["Ø ext. = 153 mm", "Ø int. = 37 mm com o'ring", "Altura total = 355 mm"],
+    construcao:
+      "Tampas em nylon, tubos e corpo em chapa hélix em aço galvanizado. Vedações em borracha nitrílica (NBR).",
+    meioFiltrante:
+      "Material de profundidade e papel celulose plissado internamente, com separador de água (aquabloq).",
+    areaFiltrante:
+      "Interna: 5.070 cm² (partículas maiores que 25µ) · Externa: 6.790 cm² (partículas maiores que 5µ) · Retenção de água: <200 ppm",
+    aplicacao: "Óleo diesel, querosene de aviação (QAV) e gasolina de aviação. Não utilizar em fluidos com álcool.",
+    equivalencias: [
+      { marca: "FACET", modelo: "CC22C" },
+      { marca: "OLEOFIL", modelo: "OLMC120" },
+      { marca: "FILTROIL", modelo: "FUC22C" },
+      { marca: "MAHLE-FILTROIL", modelo: "FIL22C" },
+      { marca: "RACOR", modelo: "FBO60338" },
+      { marca: "FACET", modelo: "VF-22SB-PG" },
+      { marca: "SULFILTROS", modelo: "SFMC150" },
+    ],
+    destaques: [
+      "Coalescência em dois estágios",
+      "Retenção de água <200 ppm",
+      "Grau de filtragem de 5µ",
+      "Vedações em borracha nitrílica (NBR)",
+    ],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-50pl",
+    name: "Elemento Coalescente Hidrofóbico NBF-50PL",
+    category: "Elemento filtrante",
+    img: e50pla.url,
+    gallery: [e50pla.url, e50plb.url, e50plc.url, e50plm.url],
+    shortDescription:
+      "Elemento coalescedor/separador com manta de fibra de vidro plissada e separador de água, para diesel e combustíveis de aviação.",
+    longDescription: "Elemento Coalescedor/Separador: tem a função de aglutinar as partículas de água contidas no combustível, o que acelera a sua decantação. O processo é realizado em duas fases, através de dois meios filtrantes distintos. Além disso, o elemento retém as partículas sólidas contidas no combustível. Econômico, compacto e de fácil manutenção, pode ser utilizado em óleo diesel, querosene de aviação ou gasolina de aviação. Importante: não pode ser utilizado em meio fluido que contenha álcool.",
+    dimensional: ["Ø ext. = 153 mm", "Ø int. = 37 mm com o'ring", "Altura total = 355 mm"],
+    construcao:
+      "Tampas em nylon injetado, tubo interno e externo perfurado em chapa de aço galvanizado. Vedações em borracha nitrílica (NBR).",
+    meioFiltrante:
+      "Manta de fibra de vidro plissada com tela de reforço e, internamente, separador de água (papel aquabloq).",
+    areaFiltrante:
+      "Interna: 5.070 cm² (partículas maiores que 25µ) · Externa: 6.790 cm² (partículas maiores que 10µ) · Retenção de água: <200 ppm",
+    aplicacao: "Óleo diesel, querosene de aviação (QAV) e gasolina de aviação. Não utilizar em fluidos com álcool.",
+    equivalencias: [
+      { marca: "FACET", modelo: "CC22C" },
+      { marca: "OLEOFIL", modelo: "OLMC120" },
+      { marca: "FILTROIL", modelo: "FUC22C" },
+      { marca: "MAHLE-FILTROIL", modelo: "FIL22C" },
+      { marca: "RACOR", modelo: "FBO60338" },
+      { marca: "FACET", modelo: "VF-22SB-PG" },
+      { marca: "SULFILTROS", modelo: "SFMC150" },
+    ],
+    destaques: [
+      "Manta de fibra de vidro plissada",
+      "Retenção de água <200 ppm",
+      "Grau de filtragem de 10µ",
+      "Fácil manutenção",
+    ],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-49pl",
+    name: "Elemento Coalescente Hidrofóbico NBF-49PL",
+    category: "Elemento filtrante",
+    img: e49a.url,
+    gallery: [e49a.url, e49b.url, e49c.url, e49m.url],
+    shortDescription:
+      "Elemento coalescedor/separador compacto (260 mm) em fibra de vidro, com separador de água aquabloq.",
+    longDescription: "Elemento Coalescedor/Separador: tem a função de aglutinar as partículas de água contidas no combustível, o que acelera a sua decantação. O processo é realizado em duas fases, através de dois meios filtrantes distintos. Além disso, o elemento retém as partículas sólidas contidas no combustível. Econômico, compacto e de fácil manutenção, pode ser utilizado em óleo diesel, querosene de aviação ou gasolina de aviação. Importante: não pode ser utilizado em meio fluido que contenha álcool.",
+    dimensional: ["Ø ext. = 153 mm", "Ø int. = 37 mm com o'ring", "Altura total = 260 mm"],
+    construcao:
+      "Tampas em nylon injetado, tubo interno e externo perfurado em chapa de aço galvanizado. Vedações em borracha nitrílica (NBR).",
+    meioFiltrante:
+      "Manta de fibra de vidro plissada com tela de reforço e, internamente, separador de água (papel aquabloq).",
+    areaFiltrante:
+      "Interna: 5.070 cm² (partículas maiores que 25µ) · Externa: 6.790 cm² (partículas maiores que 10µ) · Retenção de água: <200 ppm",
+    aplicacao: "Óleo diesel, querosene de aviação (QAV) e gasolina de aviação. Não utilizar em fluidos com álcool.",
+    equivalencias: [
+      { marca: "FACET", modelo: "VF-21SB-PG" },
+      { marca: "LUPUS", modelo: "9182-A" },
+      { marca: "FACET", modelo: "FG-O-609-7" },
+      { marca: "FACET", modelo: "CC-21-7" },
+      { marca: "ENGEMAI", modelo: "EE-346" },
+      { marca: "FACET", modelo: "CC-21C" },
+    ],
+    destaques: [
+      "Construção compacta de 260 mm",
+      "Grau de filtragem de 10µ",
+      "Retenção de água <200 ppm",
+      "Manta de fibra de vidro",
+    ],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-48pp",
+    name: "Elemento Coalescente Hidrofóbico NBF-48PP",
+    category: "Elemento filtrante",
+    img: e48a.url,
+    gallery: [e48a.url, e48b.url, e48c.url, e48m.url],
+    shortDescription:
+      "Elemento coalescedor/separador compacto (260 mm) com meio de profundidade e papel celulose, filtragem de 5µ.",
+    longDescription: "Elemento Coalescedor/Separador: tem a função de aglutinar as partículas de água contidas no combustível, o que acelera a sua decantação. O processo é realizado em duas fases, através de dois meios filtrantes distintos. Além disso, o elemento retém as partículas sólidas contidas no combustível. Econômico, compacto e de fácil manutenção, pode ser utilizado em óleo diesel, querosene de aviação ou gasolina de aviação. Importante: não pode ser utilizado em meio fluido que contenha álcool.",
+    dimensional: ["Ø ext. = 153 mm", "Ø int. = 37 mm com o'ring", "Altura total = 260 mm"],
+    construcao:
+      "Tampas em nylon, tubos e corpo em chapa hélix em aço galvanizado. Vedações em borracha nitrílica (NBR).",
+    meioFiltrante:
+      "Material de profundidade e papel celulose plissado internamente, com separador de água (aquabloq).",
+    areaFiltrante:
+      "Interna: 5.070 cm² (partículas maiores que 25µ) · Externa: 6.790 cm² (partículas maiores que 5µ) · Retenção de água: <200 ppm",
+    aplicacao: "Óleo diesel, querosene de aviação (QAV) e gasolina de aviação. Não utilizar em fluidos com álcool.",
+    equivalencias: [
+      { marca: "LUPUS", modelo: "9182-A" },
+      { marca: "FACET", modelo: "FG-O-609-7" },
+      { marca: "FACET", modelo: "CC-21-7" },
+      { marca: "ENGEMAI", modelo: "EE-346" },
+      { marca: "FACET", modelo: "CC-21C" },
+    ],
+    destaques: [
+      "Grau de filtragem de 5µ",
+      "Retenção de água <200 ppm",
+      "Econômico e de fácil manutenção",
+      "Corpo em chapa hélix galvanizada",
+    ],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-70tp",
+    name: "Elemento Coalescente Hidrofóbico NBF-70TP",
+    category: "Elemento filtrante",
+    img: e70a.url,
+    gallery: [e70a.url, e70b.url, e70c.url, e70m.url],
+    shortDescription:
+      "Elemento separador de partículas sólidas, água e óleo combustível, com 600 mm de altura e dois estágios de filtragem.",
+    longDescription:
+      "O NBF-70TP é um elemento separador de partículas sólidas, água e óleo combustível. Trabalha em dois estágios de filtragem — papel celulose externo de 25µ e papel aquablock interno de 5µ — garantindo combustível limpo e seco em altas vazões.",
+    dimensional: ["Ø ext. = 152 mm", "Ø int. = 44 mm", "Altura total = 600 mm", "Peso: 1,900 kg"],
+    construcao:
+      "Tampas em nylon injetado, corpo e tubos em chapa expandida de aço galvanizado.",
+    meioFiltrante:
+      "Dois estágios — 1º papel celulose (externo) 25µ e papel aquablock (interno) 5µ.",
+    equivalencias: [{ marca: "TECNOPURO", modelo: "Discovery Pro" }],
+    destaques: [
+      "Dois estágios de filtragem (25µ e 5µ)",
+      "Altura total de 600 mm",
+      "Chapa expandida de aço galvanizado",
+      "Separa água e partículas sólidas",
+    ],
+  },
+  {
+    slug: "elemento-coalescente-hidrofobico-nbf-60tp",
+    name: "Elemento Coalescente Hidrofóbico NBF-60TP",
+    category: "Elemento filtrante",
+    img: e60a.url,
+    gallery: [e60a.url, e60b.url, e60c.url, e60m.url],
+    shortDescription:
+      "Elemento separador de partículas sólidas, água e óleo combustível, com 395 mm de altura e dois estágios de filtragem.",
+    longDescription:
+      "O NBF-60TP é um elemento separador de partículas sólidas, água e óleo combustível. Sua filtragem em dois estágios — papel celulose externo de 25µ e papel aquablock interno de 5µ — protege bombas, bicos e motores contra contaminação.",
+    dimensional: ["Ø ext. = 153 mm", "Ø int. = 44 mm", "Altura total = 395 mm", "Peso: 1,400 kg"],
+    construcao:
+      "Tampas em nylon injetado, corpo e tubos em chapa expandida de aço galvanizado.",
+    meioFiltrante:
+      "Dois estágios — 1º papel celulose (externo) 25µ e papel aquablock (interno) 5µ.",
+    equivalencias: [{ marca: "TECNOPURO", modelo: "Discovery" }],
+    destaques: [
+      "Dois estágios de filtragem (25µ e 5µ)",
+      "Peso de 1,400 kg",
+      "Chapa expandida de aço galvanizado",
+      "Separa água e partículas sólidas",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-736av",
+    name: "Elemento Filtrante NBF-736AV",
+    category: "Elemento filtrante",
+    img: e736a.url,
+    gallery: [e736a.url, e736b.url, e736m.url],
+    shortDescription:
+      "Elemento separador de partículas sólidas e de água/óleo combustível, com papel celulose plissado de 5µ e 916 mm de altura.",
+    longDescription:
+      "O NBF-736AV é um elemento separador de partículas sólidas e separador de água e óleo combustível, indicado para sistemas de abastecimento de aviação e grandes vazões. Corpo em chapa de flandres perfurado e meio filtrante em papel celulose plissado com micragem nominal de 5µ.",
+    dimensional: ["Ø ext. (A) = 152 mm", "Altura total (H) = 916 mm"],
+    construcao:
+      "Tampas em chapa de aço carbono estampada; tubo em chapa de aço carbono perfurado com guias de reforço interno; corpo em chapa de flandres perfurado; vedação com arruela de borracha sintética colada nas tampas.",
+    meioFiltrante: "Papel celulose plissado — micragem nominal 5µ.",
+    equivalencias: [
+      { marca: "NEWBORGES", modelo: "MBF-736AV" },
+      { marca: "AVI-MACH", modelo: "FO-736M05" },
+      { marca: "MAHLE FILTROIL", modelo: "FL736SP" },
+      { marca: "UNIFILTER", modelo: "UDSP736" },
+    ],
+    destaques: [
+      "Micragem nominal de 5µ",
+      "Altura total de 916 mm",
+      "Corpo em chapa de flandres perfurado",
+      "Separador de água e óleo combustível",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-629mf",
+    name: "Elemento Filtrante NBF-629MF",
+    category: "Elemento filtrante",
+    img: e629a.url,
+    gallery: [e629a.url, e629b.url, e629m.url],
+    shortDescription:
+      "Elemento em tela teflonada separador de sólidos, com micragem nominal de 50µ e 725 mm de altura.",
+    longDescription:
+      "O NBF-629MF é um elemento em tela teflonada separador de sólidos, projetado para sistemas de filtragem de combustíveis de alta exigência. A tela teflonada permite limpeza e alta durabilidade, com micragem nominal de 50µ.",
+    dimensional: ["Ø ext. = 152 mm", "Ø int. = 89 mm", "Altura total (H) = 725 mm"],
+    construcao:
+      "Tampas em chapa de aço carbono estampada; tubo em chapa de aço carbono perfurado com guias de reforço interno; corpo em chapa de flandres perfurado; vedação com arruela de borracha sintética colada nas tampas.",
+    meioFiltrante: "Tela teflonada — micragem nominal 50µ.",
+    equivalencias: [
+      { marca: "VELCON", modelo: "FDS-614" },
+      { marca: "MAHLE FILTROIL", modelo: "SS629" },
+      { marca: "BARRA", modelo: "BTNT-15613/50" },
+    ],
+    destaques: [
+      "Tela teflonada de alta durabilidade",
+      "Micragem nominal de 50µ",
+      "Altura total de 725 mm",
+      "Separador de sólidos",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-101sf",
+    name: "Elemento Filtrante NBF-101SF",
+    category: "Elemento filtrante",
+    img: e101a.url,
+    gallery: [e101a.url, e101b.url, e101m.url],
+    shortDescription:
+      "Elemento micrônico em papel celulose plissado, com micragem nominal de 25µ e 560 mm de altura.",
+    longDescription:
+      "O NBF-101SF é um elemento micrônico com meio filtrante em papel celulose plissado, indicado para a retenção de partículas sólidas em sistemas de filtragem de combustíveis. Micragem nominal de 25µ.",
+    dimensional: ["Ø ext. = 152 mm", "Ø int. = 88 mm", "Altura total (H) = 560 mm"],
+    construcao:
+      "Tampas em chapa de aço carbono estampada; tubo em chapa de aço carbono perfurado com guias de reforço interno; corpo em chapa de flandres perfurado; vedação com arruela de borracha sintética colada nas tampas.",
+    meioFiltrante: "Papel celulose plissado — micragem nominal 25µ.",
+    destaques: [
+      "Elemento micrônico",
+      "Micragem nominal de 25µ",
+      "Altura total de 560 mm",
+      "Tampas em aço carbono estampado",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-27fl",
+    name: "Elemento Filtrante NBF-27FL",
+    category: "Elemento filtrante",
+    img: e27a.url,
+    gallery: [e27a.url, e27b.url, e27c.url, e27d.url, e27m.url],
+    shortDescription:
+      "Filtro para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 10µ.",
+    longDescription:
+      "O NBF-27FL é um filtro de combustível para estações fixas de bombeamento, com tampas em nylon injetadas e tubo interno em chapa de aço perfurado e zincado. Meio filtrante em papel celulose plissado com silicone agregado. Não aplicável em veículos automotores.",
+    dimensional: ["Ø ext. = 110 mm", "Altura = 250 mm", "Rosca = 1.1/2\"-16 UN"],
+    construcao:
+      "Tampas em nylon injetadas e tubo interno do elemento em chapa de aço perfurado e zincado. Sem válvula by-pass e sem válvula anti-retorno.",
+    meioFiltrante:
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+    areaFiltrante: "7.452 cm²",
+    aplicacao:
+      "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
+    equivalencias: [
+      { marca: "NEWBORGES", modelo: "NBF-28" },
+      { marca: "FILTROSMAX", modelo: "MAX 80" },
+    ],
+    destaques: [
+      "Micronagem nominal de 10µ",
+      "Área filtrante de 7.452 cm²",
+      "Papel celulose com silicone agregado",
+      "Tampas em nylon injetadas",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-200wt",
+    name: "Elemento Filtrante NBF-200WT",
+    category: "Elemento filtrante",
+    img: e200a.url,
+    gallery: [e200a.url, e200b.url, e200c.url, e200m.url],
+    shortDescription:
+      "Elemento filtro de sucção em tela de aço inox M100 plissada, rosca 2\" - 11,5 NPT.",
+    longDescription:
+      "O NBF-200WT é um elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
+    dimensional: ["Ø ext. = 165 mm", "Rosca = 2\" - 11,5 NPT", "Altura total = 168 mm"],
+    construcao:
+      "Tampas injetadas em nylon e tubo em chapa de aço carbono perfurado.",
+    meioFiltrante: "Tela de aço inox M100 plissada — micronagem 154µ.",
+    areaFiltrante: "1.200 cm²",
+    aplicacao: "Filtro de sucção para proteção de bombas em sistemas de combustível.",
+    equivalencias: [
+      { marca: "HDA", modelo: "FTS200" },
+      { marca: "UNIFILTER", modelo: "USS200TI" },
+      { marca: "NEWTEC", modelo: "HS200HN" },
+    ],
+    destaques: [
+      "Tela de aço inox M100 lavável",
+      "Micronagem de 154µ",
+      "Área filtrante de 1.200 cm²",
+      "Rosca 2\" - 11,5 NPT",
+    ],
+  },
+  {
+    slug: "elemento-filtrante-nbf-19",
+    name: "Elemento Filtrante NBF-19",
+    category: "Elemento filtrante",
+    img: e19a.url,
+    gallery: [e19a.url, e19b.url, e19c.url, e19m.url],
+    shortDescription:
+      "Elemento em papel celulose plissado para diesel, com 8.570 cm² de área filtrante e 30µ nominal. Aplicação Scania/Volvo.",
+    longDescription:
+      "O NBF-19 é um elemento filtrante em papel celulose plissado para combustível diesel, com tampas em plástico injetado e tubo em chapa de aço perfurada. Aplicação em caminhões e ônibus Scania e Volvo (número Scania 1671502) e no elemento do 1000FHAC.",
+    dimensional: ["Ø ext. = 112 mm", "Ø int. = 17 / 21 mm", "Altura = 240 mm"],
+    construcao:
+      "Tampas em plástico injetado, tubo em chapa de aço perfurada. Acompanha vedação de borracha sintética.",
+    meioFiltrante: "Papel celulose plissado — micronagem nominal 30µ.",
+    areaFiltrante: "8.570 cm²",
+    aplicacao:
+      "Fluido: combustível diesel. Scania/Volvo — caminhões e ônibus (número Scania 1671502). Elemento do 1000FHAC.",
+    equivalencias: [
+      { marca: "BALDWIN", modelo: "PF789080" },
+      { marca: "INPECA", modelo: "SSD0168" },
+      { marca: "BOSCH", modelo: "9455080015" },
+      { marca: "LUBER-FINER", modelo: "L2020F" },
+      { marca: "DELPHI", modelo: "EFS100" },
+      { marca: "MAHLE", modelo: "KX88D" },
+      { marca: "DONALDSON", modelo: "P552020" },
+      { marca: "MANN", modelo: "P12781" },
+      { marca: "TURBO", modelo: "TC12015" },
+      { marca: "RACOR", modelo: "2020TP30M" },
+      { marca: "FLEETGUARD", modelo: "FS1206" },
+      { marca: "SCANIA", modelo: "1671502" },
+      { marca: "FRAM", modelo: "CS3504" },
+      { marca: "VOLVO", modelo: "33040064" },
+    ],
+    destaques: [
+      "Área filtrante de 8.570 cm²",
+      "Micronagem nominal de 30µ",
+      "Aplicação Scania/Volvo",
+      "Acompanha vedação de borracha sintética",
+    ],
   },
   {
     slug: "nbf-3ms",
