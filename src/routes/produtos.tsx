@@ -54,7 +54,9 @@ function Produtos() {
         <Tabs value={filter} onValueChange={(v) => setFilter(v as Filter)} className="mb-10">
           <TabsList className="h-auto p-1 flex-wrap">
             <TabsTrigger value="Todos" className="px-4 py-2">Todos</TabsTrigger>
-            <TabsTrigger value="Elemento filtrante" className="px-4 py-2">Elemento filtrante</TabsTrigger>
+            <TabsTrigger value="Elemento Micrônico" className="px-4 py-2">Elemento Micrônico</TabsTrigger>
+            <TabsTrigger value="Elemento Coalescente" className="px-4 py-2">Elemento Coalescente</TabsTrigger>
+            <TabsTrigger value="Elemento Hidrofóbico" className="px-4 py-2">Elemento Hidrofóbico</TabsTrigger>
             <TabsTrigger value="Filtro" className="px-4 py-2">Filtro</TabsTrigger>
             <TabsTrigger value="Caixa separadora" className="px-4 py-2">Caixa separadora</TabsTrigger>
           </TabsList>

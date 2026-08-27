@@ -29,7 +29,7 @@ export const Route = createFileRoute(
   head: () => {
     const p = getProdutoBySlug(SLUG);
     const title =
-      "Elemento Coalescente Hidrofóbico NBF-10PP — Pronta Entrega | New Borges";
+      "Elemento Hidrofóbico NBF-10PP — Pronta Entrega | New Borges";
     const description =
       "NBF-10PP: elemento filtrante coalescente para separação de água e retenção de partículas em diesel. Compatível com Selcom 100, FC 100, EC-5245 e mais. Pronta entrega — fale no WhatsApp.";
     const image = p?.img;
@@ -52,11 +52,11 @@ export const Route = createFileRoute(
           children: JSON.stringify({
             "@context": "https://schema.org",
             "@type": "Product",
-            name: "Elemento Coalescente Hidrofóbico NBF-10PP",
+            name: "Elemento Hidrofóbico NBF-10PP",
             brand: { "@type": "Brand", name: "New Borges" },
             description,
             image: image ? [image] : undefined,
-            category: "Elemento filtrante coalescente",
+            category: "Elemento hidrofóbico",
             offers: {
               "@type": "Offer",
               availability: "https://schema.org/InStock",
@@ -113,7 +113,7 @@ function NBF10PPLanding() {
               </span>
               <img
                 src={gallery[active]}
-                alt="Elemento Coalescente Hidrofóbico NBF-10PP — New Borges"
+                alt="Elemento Hidrofóbico NBF-10PP — New Borges"
                 className="w-full h-full object-contain aspect-square bg-background"
               />
               {gallery.length > 1 && (
@@ -145,7 +145,7 @@ function NBF10PPLanding() {
           {/* Copy + CTA */}
           <div>
             <span className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-primary border border-primary/30 bg-primary/5 rounded-full px-2.5 py-1">
-              <Droplets className="size-3.5" /> Coalescente Hidrofóbico
+              <Droplets className="size-3.5" /> Elemento Hidrofóbico
             </span>
             <h1 className="mt-4 font-display text-3xl md:text-5xl font-bold leading-tight">
               Elemento Coalescente{" "}

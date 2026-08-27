@@ -144,7 +144,7 @@ import e736b from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7115.jpg.asset.j
 import e736m from "@/assets/nb/produtos/elementos2/nbf-736av-01_montagem.jpg.asset.json";
 
 
-export type Categoria = "Elemento filtrante" | "Filtro" | "Caixa separadora";
+export type Categoria = "Elemento Micrônico" | "Elemento Coalescente" | "Elemento Hidrofóbico" | "Filtro" | "Caixa separadora";
 
 export interface Equivalencia {
   marca: string;
@@ -276,8 +276,8 @@ export const produtos: Produto[] = [
 
   {
     slug: "elemento-coalescente-hidrofobico-nbf-40pp",
-    name: "Elemento Coalescente Hidrofóbico NBF-40PP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-40PP",
+    category: "Elemento Hidrofóbico",
     img: nbf40pp,
     shortDescription:
       "Elemento filtrante de alta performance para separação de água e retenção de sólidos em combustíveis.",
@@ -288,8 +288,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-30ti",
-    name: "Elemento Coalescente Hidrofóbico NBF-30TI",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-30TI",
+    category: "Elemento Hidrofóbico",
     img: nbf30ti,
     shortDescription:
       "Alta eficiência na coalescência e remoção de água do combustível.",
@@ -299,8 +299,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-29tp",
-    name: "Elemento Coalescente Hidrofóbico NBF-29TP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-29TP",
+    category: "Elemento Hidrofóbico",
     img: nbf29tp,
     shortDescription:
       "Aplicações exigentes na filtragem de combustíveis e fluidos industriais.",
@@ -308,8 +308,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",
-    name: "Elemento Coalescente Hidrofóbico NBF-28FL",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-28FL",
+    category: "Elemento Coalescente",
     img: nbf28fl3.url,
     gallery: [nbf28fl3.url, nbf28fl2.url, nbf28fl1.url, nbf28flMont.url],
     shortDescription:
@@ -337,8 +337,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-23fm",
-    name: "Elemento Coalescente Hidrofóbico NBF-23FM",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-23FM",
+    category: "Elemento Coalescente",
     img: nbf23fm,
     shortDescription:
       "Remoção eficiente de água (livre e emulsificada) e contaminantes sólidos.",
@@ -346,8 +346,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-21pp",
-    name: "Elemento Coalescente Hidrofóbico NBF-21PP",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-21PP",
+    category: "Elemento Coalescente",
     img: nbf21pp3.url,
     gallery: [nbf21pp3.url, nbf21pp2.url, nbf21pp1.url, nbf21ppMont.url],
     shortDescription:
@@ -356,8 +356,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-11",
-    name: "Elemento Coalescente Hidrofóbico NBF-11",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-11",
+    category: "Elemento Coalescente",
     img: nbf11a.url,
     gallery: [nbf11a.url, nbf11b.url, nbf11c.url, nbf11Mont.url],
     shortDescription:
@@ -366,14 +366,14 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-10pp",
-    name: "Elemento Coalescente Hidrofóbico NBF-10PP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-10PP",
+    category: "Elemento Hidrofóbico",
     img: nbf10pp3.url,
     gallery: [nbf10pp3.url, nbf10pp2.url, nbf10pp1.url, nbf10ppMont.url],
     shortDescription:
       "Elemento separador de partículas sólidas, água e óleo combustível.",
     longDescription:
-      "O Elemento Coalescente Hidrofóbico NBF-10PP é um separador de partículas sólidas, água e óleo combustível, projetado para garantir alta eficiência na coalescência, proteger equipamentos e sistemas, realizar separação eficaz de água e impurezas e aumentar a vida útil do combustível.",
+      "O Elemento Hidrofóbico NBF-10PP é um separador de partículas sólidas, água e óleo combustível, projetado para garantir alta eficiência na coalescência, proteger equipamentos e sistemas, realizar separação eficaz de água e impurezas e aumentar a vida útil do combustível.",
     dimensional: [
       "Ø ext. = 153 mm",
       "Ø int. = 38,5 mm",
@@ -402,8 +402,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-10dl",
-    name: "Elemento Coalescente Hidrofóbico NBF-10DL",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-10DL",
+    category: "Elemento Coalescente",
     img: nbf10dl1.url,
     gallery: [nbf10dl1.url, nbf10dl2.url, nbf10dl3.url, nbf10dlMont.url],
     shortDescription:
@@ -412,8 +412,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-08pf",
-    name: "Elemento Coalescente Hidrofóbico NBF-08PF",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-08PF",
+    category: "Elemento Coalescente",
     img: nbf08pf3.url,
     gallery: [nbf08pf3.url, nbf08pf2.url, nbf08pf1.url, nbf08pfMont.url],
     shortDescription:
@@ -441,8 +441,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-07",
-    name: "Elemento Coalescente Hidrofóbico NBF-07MF",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-07MF",
+    category: "Elemento Coalescente",
     img: e07a.url,
     gallery: [e07a.url, e07b.url, e07c.url, e07m.url],
     shortDescription:
@@ -474,8 +474,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-4ms",
-    name: "Elemento Coalescente Hidrofóbico NBF-4MS",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-4MS",
+    category: "Elemento Coalescente",
     img: nbf10pp,
     shortDescription:
       "Cartucho de alta eficiência para remoção de aerossóis líquidos, umidade e sólidos em ar comprimido e gases.",
@@ -483,8 +483,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-50pp",
-    name: "Elemento Coalescente Hidrofóbico NBF-50PP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-50PP",
+    category: "Elemento Hidrofóbico",
     img: e50ppa.url,
     gallery: [e50ppa.url, e50ppb.url, e50ppc.url, e50ppm.url],
     shortDescription:
@@ -516,8 +516,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-50pl",
-    name: "Elemento Coalescente Hidrofóbico NBF-50PL",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-50PL",
+    category: "Elemento Hidrofóbico",
     img: e50pla.url,
     gallery: [e50pla.url, e50plb.url, e50plc.url, e50plm.url],
     shortDescription:
@@ -549,8 +549,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-49pl",
-    name: "Elemento Coalescente Hidrofóbico NBF-49PL",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-49PL",
+    category: "Elemento Hidrofóbico",
     img: e49a.url,
     gallery: [e49a.url, e49b.url, e49c.url, e49m.url],
     shortDescription:
@@ -581,8 +581,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-48pp",
-    name: "Elemento Coalescente Hidrofóbico NBF-48PP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-48PP",
+    category: "Elemento Hidrofóbico",
     img: e48a.url,
     gallery: [e48a.url, e48b.url, e48c.url, e48m.url],
     shortDescription:
@@ -612,8 +612,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-70tp",
-    name: "Elemento Coalescente Hidrofóbico NBF-70TP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-70TP",
+    category: "Elemento Hidrofóbico",
     img: e70a.url,
     gallery: [e70a.url, e70b.url, e70c.url, e70m.url],
     shortDescription:
@@ -635,8 +635,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-60tp",
-    name: "Elemento Coalescente Hidrofóbico NBF-60TP",
-    category: "Elemento filtrante",
+    name: "Elemento Hidrofóbico NBF-60TP",
+    category: "Elemento Hidrofóbico",
     img: e60a.url,
     gallery: [e60a.url, e60b.url, e60c.url, e60m.url],
     shortDescription:
@@ -658,8 +658,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-736av",
-    name: "Elemento Filtrante NBF-736AV",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-736AV",
+    category: "Elemento Coalescente",
     img: e736a.url,
     gallery: [e736a.url, e736b.url, e736m.url],
     shortDescription:
@@ -685,8 +685,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-629mf",
-    name: "Elemento Filtrante NBF-629MF",
-    category: "Elemento filtrante",
+    name: "Elemento Micrônico NBF-629MF",
+    category: "Elemento Micrônico",
     img: e629a.url,
     gallery: [e629a.url, e629b.url, e629m.url],
     shortDescription:
@@ -711,8 +711,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-101sf",
-    name: "Elemento Filtrante NBF-101SF",
-    category: "Elemento filtrante",
+    name: "Elemento Micrônico NBF-101SF",
+    category: "Elemento Micrônico",
     img: e101a.url,
     gallery: [e101a.url, e101b.url, e101m.url],
     shortDescription:
@@ -732,8 +732,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-27fl",
-    name: "Elemento Filtrante NBF-27FL",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-27FL",
+    category: "Elemento Coalescente",
     img: e27a.url,
     gallery: [e27a.url, e27b.url, e27c.url, e27d.url, e27m.url],
     shortDescription:
@@ -761,8 +761,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-200wt",
-    name: "Elemento Filtrante NBF-200WT",
-    category: "Elemento filtrante",
+    name: "Elemento Micrônico NBF-200WT",
+    category: "Elemento Micrônico",
     img: e200a.url,
     gallery: [e200a.url, e200b.url, e200c.url, e200m.url],
     shortDescription:
@@ -789,8 +789,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-19",
-    name: "Elemento Filtrante NBF-19",
-    category: "Elemento filtrante",
+    name: "Elemento Micrônico NBF-19",
+    category: "Elemento Micrônico",
     img: e19a.url,
     gallery: [e19a.url, e19b.url, e19c.url, e19m.url],
     shortDescription:
@@ -829,8 +829,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-110mm-encaixe",
-    name: "Elemento Resina Fenólica 5 Micra Alt. 110mm — Encaixe",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 110mm — Encaixe",
+    category: "Elemento Coalescente",
     img: fn110a.url,
     gallery: [fn110a.url, fn110b.url, fn110m.url],
     shortDescription:
@@ -851,8 +851,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-160mm-encaixe",
-    name: "Elemento Resina Fenólica 5 Micra Alt. 160mm — Encaixe",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 160mm — Encaixe",
+    category: "Elemento Coalescente",
     img: fn160a.url,
     gallery: [fn160a.url, fn160b.url, fn160m.url],
     shortDescription:
@@ -873,8 +873,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-245mm-encaixe",
-    name: "Elemento Resina Fenólica 5 Micra Alt. 245mm — Encaixe",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 245mm — Encaixe",
+    category: "Elemento Coalescente",
     img: fn245a.url,
     gallery: [fn245a.url, fn245b.url, fn245m.url],
     shortDescription:
@@ -895,8 +895,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "nbf-3ms",
-    name: "NBF-3MS",
-    category: "Elemento filtrante",
+    name: "Elemento Coalescente NBF-3MS",
+    category: "Elemento Coalescente",
     img: nbf3ms,
     shortDescription: "Elemento filtrante NBF-3MS para aplicações industriais de filtragem fina.",
     destaques: ["Filtragem fina industrial"],
