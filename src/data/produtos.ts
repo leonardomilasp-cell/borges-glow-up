@@ -90,6 +90,15 @@ import e07a from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8649.jpg.asset.jso
 import e07b from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8650.jpg.asset.json";
 import e07c from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8656.jpg.asset.json";
 import e07m from "@/assets/nb/produtos/elementos2/nbf-07mf-montagem_nbf-07mf.jpg.asset.json";
+import fn110a from "@/assets/nb/produtos/elementos3/fn5m110-1.jpg.asset.json";
+import fn110b from "@/assets/nb/produtos/elementos3/fn5m110-2.jpg.asset.json";
+import fn110m from "@/assets/nb/produtos/elementos3/fn5m110-montagem.jpg.asset.json";
+import fn160a from "@/assets/nb/produtos/elementos3/fn5m160-1.jpg.asset.json";
+import fn160b from "@/assets/nb/produtos/elementos3/fn5m160-2.jpg.asset.json";
+import fn160m from "@/assets/nb/produtos/elementos3/fn5m160-montagem.jpg.asset.json";
+import fn245a from "@/assets/nb/produtos/elementos3/fn5m245-1.jpg.asset.json";
+import fn245b from "@/assets/nb/produtos/elementos3/fn5m245-2.jpg.asset.json";
+import fn245m from "@/assets/nb/produtos/elementos3/fn5m245-montagem.jpg.asset.json";
 import e101a from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7126.jpg.asset.json";
 import e101b from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7127.jpg.asset.json";
 import e101m from "@/assets/nb/produtos/elementos2/nbf-101sf-nbf-101sf_montagem_01.jpg.asset.json";
@@ -816,6 +825,72 @@ export const produtos: Produto[] = [
       "Micronagem nominal de 30µ",
       "Aplicação Scania/Volvo",
       "Acompanha vedação de borracha sintética",
+    ],
+  },
+  {
+    slug: "elemento-resina-fenolica-5-micra-110mm-encaixe",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 110mm — Encaixe",
+    category: "Elemento filtrante",
+    img: fn110a.url,
+    gallery: [fn110a.url, fn110b.url, fn110m.url],
+    shortDescription:
+      "Elemento em resina fenólica de 5 micra, altura 110 mm, montagem por encaixe. Disponível também em 1 micron.",
+    longDescription:
+      "Elemento filtrante em resina fenólica com micragem de 5 micra, altura de 110 mm e diâmetro de 70 mm, com montagem por encaixe. Indicado para a filtragem fina de combustíveis, retendo partículas sólidas e contribuindo para a proteção do sistema. Disponível nas versões 5 micra e 1 micron.",
+    dimensional: ["Altura = 110 mm", "Ø = 70 mm", "Peso = 110 g"],
+    construcao: "Elemento em resina fenólica com montagem por encaixe.",
+    meioFiltrante: "Resina fenólica — 5 micra (também disponível em 1 micron).",
+    aplicacao: "Filtragem fina de combustíveis em sistemas com alojamento por encaixe.",
+    equivalencias: [{ marca: "EUROFILT", modelo: "EF200 BR" }],
+    destaques: [
+      "Resina fenólica de 5 micra",
+      "Também disponível em 1 micron",
+      "Altura de 110 mm x Ø 70 mm",
+      "Montagem por encaixe",
+    ],
+  },
+  {
+    slug: "elemento-resina-fenolica-5-micra-160mm-encaixe",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 160mm — Encaixe",
+    category: "Elemento filtrante",
+    img: fn160a.url,
+    gallery: [fn160a.url, fn160b.url, fn160m.url],
+    shortDescription:
+      "Elemento em resina fenólica de 5 micra, altura 160 mm, montagem por encaixe. Disponível também em 1 micron.",
+    longDescription:
+      "Elemento filtrante em resina fenólica com micragem de 5 micra, altura de 160 mm e diâmetro de 70 mm, com montagem por encaixe. Indicado para a filtragem fina de combustíveis, retendo partículas sólidas e contribuindo para a proteção do sistema. Disponível nas versões 5 micra e 1 micron.",
+    dimensional: ["Altura = 160 mm", "Ø = 70 mm", "Peso = 135 g"],
+    construcao: "Elemento em resina fenólica com montagem por encaixe.",
+    meioFiltrante: "Resina fenólica — 5 micra (também disponível em 1 micron).",
+    aplicacao: "Filtragem fina de combustíveis em sistemas com alojamento por encaixe.",
+    equivalencias: [{ marca: "EUROFILT", modelo: "EF 300 BR" }],
+    destaques: [
+      "Resina fenólica de 5 micra",
+      "Também disponível em 1 micron",
+      "Altura de 160 mm x Ø 70 mm",
+      "Montagem por encaixe",
+    ],
+  },
+  {
+    slug: "elemento-resina-fenolica-5-micra-245mm-encaixe",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 245mm — Encaixe",
+    category: "Elemento filtrante",
+    img: fn245a.url,
+    gallery: [fn245a.url, fn245b.url, fn245m.url],
+    shortDescription:
+      "Elemento em resina fenólica de 5 micra, altura 245 mm, montagem por encaixe. Disponível também em 1 micron.",
+    longDescription:
+      "Elemento filtrante em resina fenólica com micragem de 5 micra, altura de 245 mm e diâmetro de 70 mm, com montagem por encaixe. Indicado para a filtragem fina de combustíveis, retendo partículas sólidas e contribuindo para a proteção do sistema. Disponível nas versões 5 micra e 1 micron.",
+    dimensional: ["Altura = 245 mm", "Ø = 70 mm", "Peso = 210 g"],
+    construcao: "Elemento em resina fenólica com montagem por encaixe.",
+    meioFiltrante: "Resina fenólica — 5 micra (também disponível em 1 micron).",
+    aplicacao: "Filtragem fina de combustíveis em sistemas com alojamento por encaixe.",
+    equivalencias: [{ marca: "EUROFILT", modelo: "EF 400 BR" }],
+    destaques: [
+      "Resina fenólica de 5 micra",
+      "Também disponível em 1 micron",
+      "Altura de 245 mm x Ø 70 mm",
+      "Montagem por encaixe",
     ],
   },
   {
