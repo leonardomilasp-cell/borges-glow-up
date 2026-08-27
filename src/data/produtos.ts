@@ -90,6 +90,15 @@ import e07a from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8649.jpg.asset.jso
 import e07b from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8650.jpg.asset.json";
 import e07c from "@/assets/nb/produtos/elementos2/nbf-07mf-mg_8656.jpg.asset.json";
 import e07m from "@/assets/nb/produtos/elementos2/nbf-07mf-montagem_nbf-07mf.jpg.asset.json";
+import fn110a from "@/assets/nb/produtos/elementos3/fn5m110-1.jpg.asset.json";
+import fn110b from "@/assets/nb/produtos/elementos3/fn5m110-2.jpg.asset.json";
+import fn110m from "@/assets/nb/produtos/elementos3/fn5m110-montagem.jpg.asset.json";
+import fn160a from "@/assets/nb/produtos/elementos3/fn5m160-1.jpg.asset.json";
+import fn160b from "@/assets/nb/produtos/elementos3/fn5m160-2.jpg.asset.json";
+import fn160m from "@/assets/nb/produtos/elementos3/fn5m160-montagem.jpg.asset.json";
+import fn245a from "@/assets/nb/produtos/elementos3/fn5m245-1.jpg.asset.json";
+import fn245b from "@/assets/nb/produtos/elementos3/fn5m245-2.jpg.asset.json";
+import fn245m from "@/assets/nb/produtos/elementos3/fn5m245-montagem.jpg.asset.json";
 import e101a from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7126.jpg.asset.json";
 import e101b from "@/assets/nb/produtos/elementos2/nbf-101sf-mg_7127.jpg.asset.json";
 import e101m from "@/assets/nb/produtos/elementos2/nbf-101sf-nbf-101sf_montagem_01.jpg.asset.json";
