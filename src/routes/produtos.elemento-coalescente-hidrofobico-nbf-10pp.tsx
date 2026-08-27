@@ -145,7 +145,7 @@ function NBF10PPLanding() {
           {/* Copy + CTA */}
           <div>
             <span className="inline-flex items-center gap-1.5 text-[11px] uppercase tracking-wider text-primary border border-primary/30 bg-primary/5 rounded-full px-2.5 py-1">
-              <Droplets className="size-3.5" /> Coalescente Hidrofóbico
+              <Droplets className="size-3.5" /> Elemento Hidrofóbico
             </span>
             <h1 className="mt-4 font-display text-3xl md:text-5xl font-bold leading-tight">
               Elemento Coalescente{" "}
