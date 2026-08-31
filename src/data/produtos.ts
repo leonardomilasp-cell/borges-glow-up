@@ -276,6 +276,38 @@ export const produtos: Produto[] = [
       "Protege motores e injetores",
     ],
   },
+  {
+    slug: "filtro-turbo-diesel-nbf-08pf",
+    name: "FILTRO TURBO DIESEL NBF-08PF",
+    category: "Filtro",
+    img: tnbf08pf1.url,
+    gallery: [tnbf08pf1.url, tnbf08pf2.url, tnbf08pfM.url],
+    shortDescription:
+      "Filtro da linha coalescente, modelo sem dreno, com vazão de 80 LPM e 99% de eficiência na remoção de água livre.",
+    longDescription:
+      "O Filtro Turbo Diesel NBF-08PF integra a linha coalescente da New Borges. Modelo sem dreno, utiliza meio filtrante em papel celulose com resina hidrofóbica, retirando impurezas sólidas e a água contida no diesel por decantação — protegendo motores, bombas e injetores.",
+    dimensional: ["Entrada e saída: 1\" ou 1.1/2\" rosca BSP"],
+    construcao: "Modelo sem dreno.",
+    meioFiltrante: "Papel celulose com resina hidrofóbica.",
+    areaFiltrante: "Eficiência de 96% | Remoção de água livre: 99%",
+    vazao: "80 LPM",
+    aplicacao:
+      "Retira impurezas sólidas e água por decantação contida no diesel, em abastecimento interno e transferência de combustível.",
+    destaques: [
+      "Vazão de 80 LPM",
+      "Eficiência de 96%",
+      "99% de eficiência na remoção de água livre",
+      "Modelo sem dreno",
+    ],
+    secoes: [
+      {
+        title: "Opcionais",
+        items: ["Suporte", "Medidores"],
+      },
+    ],
+  },
+
+
 
   {
     slug: "elemento-coalescente-hidrofobico-nbf-40pp",
