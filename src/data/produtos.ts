@@ -147,7 +147,7 @@ import e736b from "@/assets/nb/produtos/elementos2/nbf-736av-mg_7115.jpg.asset.j
 import e736m from "@/assets/nb/produtos/elementos2/nbf-736av-01_montagem.jpg.asset.json";
 
 
-export type Categoria = "Elemento Micrônico" | "Elemento Coalescente" | "Elemento Hidrofóbico" | "Filtro" | "Caixa separadora";
+export type Categoria = "Elemento Micrônico" | "Elemento Coalescente" | "Elemento Hidrofóbico" | "Filtro" | "Caixa separadora" | "Outros";
 
 export interface Equivalencia {
   marca: string;
@@ -323,8 +323,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-30ti",
-    name: "Elemento Hidrofóbico NBF-30TI",
-    category: "Elemento Hidrofóbico",
+    name: "Elemento NBF-30TI",
+    category: "Outros",
     img: nbf30ti,
     shortDescription:
       "Alta eficiência na coalescência e remoção de água do combustível.",
@@ -334,8 +334,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-29tp",
-    name: "Elemento Hidrofóbico NBF-29TP",
-    category: "Elemento Hidrofóbico",
+    name: "Elemento NBF-29TP",
+    category: "Outros",
     img: nbf29tp,
     shortDescription:
       "Aplicações exigentes na filtragem de combustíveis e fluidos industriais.",
@@ -796,8 +796,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-filtrante-nbf-200wt",
-    name: "Elemento Micrônico NBF-200WT",
-    category: "Elemento Micrônico",
+    name: "Elemento NBF-200WT",
+    category: "Outros",
     img: e200a.url,
     gallery: [e200a.url, e200b.url, e200c.url, e200m.url],
     shortDescription:
@@ -864,8 +864,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-110mm-encaixe",
-    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 110mm — Encaixe",
-    category: "Elemento Coalescente",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 110mm — Encaixe",
+    category: "Outros",
     img: fn110a.url,
     gallery: [fn110a.url, fn110b.url, fn110m.url],
     shortDescription:
@@ -886,8 +886,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-160mm-encaixe",
-    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 160mm — Encaixe",
-    category: "Elemento Coalescente",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 160mm — Encaixe",
+    category: "Outros",
     img: fn160a.url,
     gallery: [fn160a.url, fn160b.url, fn160m.url],
     shortDescription:
@@ -908,8 +908,8 @@ export const produtos: Produto[] = [
   },
   {
     slug: "elemento-resina-fenolica-5-micra-245mm-encaixe",
-    name: "Elemento Coalescente Resina Fenólica 5 Micra Alt. 245mm — Encaixe",
-    category: "Elemento Coalescente",
+    name: "Elemento Resina Fenólica 5 Micra Alt. 245mm — Encaixe",
+    category: "Outros",
     img: fn245a.url,
     gallery: [fn245a.url, fn245b.url, fn245m.url],
     shortDescription:
