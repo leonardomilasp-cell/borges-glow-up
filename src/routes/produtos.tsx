@@ -59,6 +59,7 @@ function Produtos() {
             <TabsTrigger value="Elemento Hidrofóbico" className="px-4 py-2">Elemento Hidrofóbico</TabsTrigger>
             <TabsTrigger value="Filtro" className="px-4 py-2">Filtro</TabsTrigger>
             <TabsTrigger value="Caixa separadora" className="px-4 py-2">Caixa separadora</TabsTrigger>
+            <TabsTrigger value="Outros" className="px-4 py-2">Outros</TabsTrigger>
           </TabsList>
         </Tabs>
 
