@@ -2,7 +2,7 @@ import { Link } from "@tanstack/react-router";
 import { Instagram, Facebook, Phone, MapPin, Mail } from "lucide-react";
 import logo from "@/assets/nb/logo.png";
 
-const emailParts = ["contato", "newborges.com.br"];
+const emailParts = ["comercial", "newborges.com.br"];
 
 export function Footer() {
   return (

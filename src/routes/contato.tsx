@@ -32,7 +32,7 @@ function Contato() {
         <div className="lg:col-span-2 space-y-4">
           {[
             { icon: Phone, label: "Telefone", value: "(43) 3354-2494", href: "https://wa.link/x20tj3" },
-            { icon: Mail, label: "E-mail", value: "contato@newborges.com.br", href: "mailto:contato@newborges.com.br" },
+            { icon: Mail, label: "E-mail", value: "comercial@newborges.com.br", href: "mailto:comercial@newborges.com.br" },
             { icon: MapPin, label: "Endereço", value: "Cambé — Paraná, Brasil" },
             { icon: Instagram, label: "Instagram", value: "@newborgesoficial", href: "https://www.instagram.com/newborgesoficial/" },
           ].map(c => (
