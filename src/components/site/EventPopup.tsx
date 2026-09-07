@@ -66,6 +66,9 @@ export function EventPopup() {
                 <p className="mt-2 text-sm text-primary-foreground/90">
                   22ª edição — O maior evento de combustíveis e conveniência da América Latina
                 </p>
+                <div className="mt-3 inline-flex items-center gap-2 rounded-full bg-background/20 backdrop-blur px-3 py-1 text-xs font-semibold">
+                  <MapPin className="size-3" /> Estande O05 • Rua 0
+                </div>
               </div>
             </div>
 
