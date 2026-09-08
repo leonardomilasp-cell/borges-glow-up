@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createFileRoute, Link, notFound, useRouter } from "@tanstack/react-router";
+import { ArrowLeft } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import { getProdutoBySlug, produtos, type Produto } from "@/data/produtos";
 
@@ -86,8 +87,20 @@ function ProdutoDetalhe() {
 
   return (
     <Layout>
-      <section className="px-6 lg:px-12 pt-12 pb-6 max-w-[1400px] mx-auto">
-        <nav className="text-sm text-muted-foreground mb-6">
+      <section className="px-6 lg:px-12 pt-8 pb-2 max-w-[1400px] mx-auto">
+        <button
+          type="button"
+          onClick={() => window.history.back()}
+          className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition mb-4"
+          aria-label="Voltar para a página anterior"
+        >
+          <ArrowLeft className="w-4 h-4" />
+          Voltar
+        </button>
+      </section>
+
+      <section className="px-6 lg:px-12 pb-6 max-w-[1400px] mx-auto">
+        <nav className="text-sm text-muted-foreground">
           <Link to="/" className="hover:text-primary">Início</Link>
           <span className="mx-2">/</span>
           <Link to="/produtos" className="hover:text-primary">Produtos</Link>
