@@ -327,25 +327,10 @@ export const produtos: Produto[] = [
     category: "Outros",
     img: nbf30ti,
     shortDescription:
-      "Elemento filtro de sucção em tela de aço inox M100 plissada, rosca 2\" - 11,5 NPT.",
-    longDescription:
-      "O NBF-30TI é um elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
-    dimensional: ["Ø ext. = 165 mm", "Rosca = 2\" - 11,5 NPT", "Altura total = 168 mm"],
-    construcao:
-      "Tampas injetadas em nylon e tubo em chapa de aço carbono perfurado.",
-    meioFiltrante: "Tela de aço inox M100 plissada — micronagem 154µ.",
-    areaFiltrante: "1.200 cm²",
-    aplicacao: "Filtro de sucção para proteção de bombas em sistemas de combustível.",
-    equivalencias: [
-      { marca: "HDA", modelo: "FTS200" },
-      { marca: "UNIFILTER", modelo: "USS200TI" },
-      { marca: "NEWTEC", modelo: "HS200HN" },
-    ],
+      "Elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
     destaques: [
       "Tela de aço inox M100 lavável",
       "Micronagem de 154µ",
-      "Área filtrante de 1.200 cm²",
-      "Rosca 2\" - 11,5 NPT",
     ],
   },
   {
@@ -354,25 +339,10 @@ export const produtos: Produto[] = [
     category: "Outros",
     img: nbf29tp,
     shortDescription:
-      "Elemento filtro de sucção em tela de aço inox M100 plissada, rosca 2\" - 11,5 NPT.",
-    longDescription:
-      "O NBF-29TP é um elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
-    dimensional: ["Ø ext. = 165 mm", "Rosca = 2\" - 11,5 NPT", "Altura total = 168 mm"],
-    construcao:
-      "Tampas injetadas em nylon e tubo em chapa de aço carbono perfurado.",
-    meioFiltrante: "Tela de aço inox M100 plissada — micronagem 154µ.",
-    areaFiltrante: "1.200 cm²",
-    aplicacao: "Filtro de sucção para proteção de bombas em sistemas de combustível.",
-    equivalencias: [
-      { marca: "HDA", modelo: "FTS200" },
-      { marca: "UNIFILTER", modelo: "USS200TI" },
-      { marca: "NEWTEC", modelo: "HS200HN" },
-    ],
+      "Elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
     destaques: [
       "Tela de aço inox M100 lavável",
       "Micronagem de 154µ",
-      "Área filtrante de 1.200 cm²",
-      "Rosca 2\" - 11,5 NPT",
     ],
   },
   {
