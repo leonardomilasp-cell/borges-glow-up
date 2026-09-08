@@ -327,10 +327,26 @@ export const produtos: Produto[] = [
     category: "Outros",
     img: nbf30ti,
     shortDescription:
-      "Alta eficiência na coalescência e remoção de água do combustível.",
-    construcao: "Tampas em Nylon injetado, corpo e tubos em aço galvanizado.",
-    meioFiltrante: "Dois estágios — papel celulose 25µ e papel aquablock 5µ.",
-    destaques: ["Alta coalescência", "Robusto"],
+      "Elemento filtro de sucção em tela de aço inox M100 plissada, rosca 2\" - 11,5 NPT.",
+    longDescription:
+      "O NBF-30TI é um elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
+    dimensional: ["Ø ext. = 165 mm", "Rosca = 2\" - 11,5 NPT", "Altura total = 168 mm"],
+    construcao:
+      "Tampas injetadas em nylon e tubo em chapa de aço carbono perfurado.",
+    meioFiltrante: "Tela de aço inox M100 plissada — micronagem 154µ.",
+    areaFiltrante: "1.200 cm²",
+    aplicacao: "Filtro de sucção para proteção de bombas em sistemas de combustível.",
+    equivalencias: [
+      { marca: "HDA", modelo: "FTS200" },
+      { marca: "UNIFILTER", modelo: "USS200TI" },
+      { marca: "NEWTEC", modelo: "HS200HN" },
+    ],
+    destaques: [
+      "Tela de aço inox M100 lavável",
+      "Micronagem de 154µ",
+      "Área filtrante de 1.200 cm²",
+      "Rosca 2\" - 11,5 NPT",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-29tp",
@@ -338,8 +354,26 @@ export const produtos: Produto[] = [
     category: "Outros",
     img: nbf29tp,
     shortDescription:
-      "Aplicações exigentes na filtragem de combustíveis e fluidos industriais.",
-    destaques: ["Excelente capacidade de retenção", "Construção robusta"],
+      "Elemento filtro de sucção em tela de aço inox M100 plissada, rosca 2\" - 11,5 NPT.",
+    longDescription:
+      "O NBF-29TP é um elemento filtro de sucção com meio filtrante em tela de aço inox M100 plissada, indicado para a proteção de bombas em sistemas de transferência de combustível. Tela inox permite limpeza e reutilização.",
+    dimensional: ["Ø ext. = 165 mm", "Rosca = 2\" - 11,5 NPT", "Altura total = 168 mm"],
+    construcao:
+      "Tampas injetadas em nylon e tubo em chapa de aço carbono perfurado.",
+    meioFiltrante: "Tela de aço inox M100 plissada — micronagem 154µ.",
+    areaFiltrante: "1.200 cm²",
+    aplicacao: "Filtro de sucção para proteção de bombas em sistemas de combustível.",
+    equivalencias: [
+      { marca: "HDA", modelo: "FTS200" },
+      { marca: "UNIFILTER", modelo: "USS200TI" },
+      { marca: "NEWTEC", modelo: "HS200HN" },
+    ],
+    destaques: [
+      "Tela de aço inox M100 lavável",
+      "Micronagem de 154µ",
+      "Área filtrante de 1.200 cm²",
+      "Rosca 2\" - 11,5 NPT",
+    ],
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",
@@ -348,14 +382,14 @@ export const produtos: Produto[] = [
     img: nbf28fl3.url,
     gallery: [nbf28fl3.url, nbf28fl2.url, nbf28fl1.url, nbf28flMont.url],
     shortDescription:
-      "Filtro de combustível para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 10µ.",
+      "Filtro de combustível para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 25µ.",
     longDescription:
       "O NBF-28FL é um filtro de combustível desenvolvido para estações fixas de bombeamento. Possui meio filtrante em papel celulose plissado com silicone agregado, garantindo alta eficiência de retenção e longa vida útil. Não aplicável em veículos automotores.",
     dimensional: ["Ø ext. = 110 mm", "Altura = 250 mm", "Rosca = 1.1/2\"-16 UN"],
     construcao:
       "Tampas em nylon injetadas e tubo interno do elemento em chapa de aço perfurado e zincado. Sem válvula by-pass e sem válvula anti-retorno.",
     meioFiltrante:
-      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 25µ.",
     areaFiltrante: "7.452 cm²",
     aplicacao:
       "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
@@ -364,7 +398,7 @@ export const produtos: Produto[] = [
       { marca: "FILTROSMAX", modelo: "MAX 80" },
     ],
     destaques: [
-      "Micronagem nominal de 10µ",
+      "Micronagem nominal de 25µ",
       "Área filtrante de 7.452 cm²",
       "Papel celulose com silicone agregado",
       "Tampas em nylon injetadas",
@@ -772,14 +806,14 @@ export const produtos: Produto[] = [
     img: e27a.url,
     gallery: [e27a.url, e27b.url, e27c.url, e27d.url, e27m.url],
     shortDescription:
-      "Filtro para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 10µ.",
+      "Filtro para estações fixas de bombeamento, com papel celulose siliconado e micronagem nominal de 5µ.",
     longDescription:
       "O NBF-27FL é um filtro de combustível para estações fixas de bombeamento, com tampas em nylon injetadas e tubo interno em chapa de aço perfurado e zincado. Meio filtrante em papel celulose plissado com silicone agregado. Não aplicável em veículos automotores.",
     dimensional: ["Ø ext. = 110 mm", "Altura = 250 mm", "Rosca = 1.1/2\"-16 UN"],
     construcao:
       "Tampas em nylon injetadas e tubo interno do elemento em chapa de aço perfurado e zincado. Sem válvula by-pass e sem válvula anti-retorno.",
     meioFiltrante:
-      "Papel celulose (com silicone agregado) plissado — micronagem nominal 10µ.",
+      "Papel celulose (com silicone agregado) plissado — micronagem nominal 5µ.",
     areaFiltrante: "7.452 cm²",
     aplicacao:
       "Estações fixas de bombeamento de combustível. Não aplicável em veículos automotores.",
@@ -788,7 +822,7 @@ export const produtos: Produto[] = [
       { marca: "FILTROSMAX", modelo: "MAX 80" },
     ],
     destaques: [
-      "Micronagem nominal de 10µ",
+      "Micronagem nominal de 5µ",
       "Área filtrante de 7.452 cm²",
       "Papel celulose com silicone agregado",
       "Tampas em nylon injetadas",
