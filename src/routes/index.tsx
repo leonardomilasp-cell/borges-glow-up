@@ -10,6 +10,7 @@ import prodCoal from "@/assets/nb/Filtro-cupula-Aluminio-com-dreno.jpg";
 import prodCupula from "@/assets/nb/Filtro-CP-Tela-inox.jpg";
 import prodAlta from "@/assets/nb/Filtro-Alta-Vazao.jpg";
 import prodNbf from "@/assets/nb/NBF-14-1.jpg";
+import estandeAsset from "@/assets/nb/evento/estande-expopostos.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
