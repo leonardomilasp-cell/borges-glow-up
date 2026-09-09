@@ -64,6 +64,7 @@ function ProdutoError({ error, reset }: { error: Error; reset: () => void }) {
 
 function ProdutoDetalhe() {
   const { produto: p } = Route.useLoaderData() as { produto: Produto };
+  const router = useRouter();
   const related = produtos.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
   const gallery = p.gallery && p.gallery.length > 0 ? p.gallery : [p.img];
   const [active, setActive] = useState(0);
@@ -90,7 +91,18 @@ function ProdutoDetalhe() {
       <section className="px-6 lg:px-12 pt-8 pb-2 max-w-[1400px] mx-auto">
         <button
           type="button"
-          onClick={() => window.history.back()}
+          onClick={() => {
+            if (typeof window !== "undefined" && window.history.length > 1) {
+              router.history.back();
+              setTimeout(() => {
+                if (window.location.pathname.includes("/produtos/")) {
+                  window.location.href = "/produtos";
+                }
+              }, 400);
+            } else {
+              window.location.href = "/produtos";
+            }
+          }}
           className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-primary transition mb-4"
           aria-label="Voltar para a página anterior"
         >
@@ -285,7 +297,7 @@ function ProdutoDetalhe() {
           </div>
         )}
 
-        {related.length > 0 && (
+        {!p.hideRelated && related.length > 0 && (
           <div className="mt-20">
             <h2 className="font-display text-2xl font-bold mb-6">Produtos relacionados</h2>
             <div className="grid sm:grid-cols-2 md:grid-cols-4 gap-5">

@@ -178,6 +178,7 @@ export interface Produto {
   destaques?: string[];
   secoes?: Secao[];
   videoUrl?: string;
+  hideRelated?: boolean;
 }
 
 export const produtos: Produto[] = [
@@ -332,6 +333,7 @@ export const produtos: Produto[] = [
       "Tela de aço inox M100 lavável",
       "Micronagem de 154µ",
     ],
+    hideRelated: true,
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-29tp",
@@ -344,6 +346,7 @@ export const produtos: Produto[] = [
       "Tela de aço inox M100 lavável",
       "Micronagem de 154µ",
     ],
+    hideRelated: true,
   },
   {
     slug: "elemento-coalescente-hidrofobico-nbf-28fl",

@@ -1,5 +1,5 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles } from "lucide-react";
+import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles, Calendar, MapPin } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
 import hero from "@/assets/nb/produtos-hero.png";
 import segFazendas from "@/assets/seg-fazendas.jpg";
@@ -10,6 +10,7 @@ import prodCoal from "@/assets/nb/Filtro-cupula-Aluminio-com-dreno.jpg";
 import prodCupula from "@/assets/nb/Filtro-CP-Tela-inox.jpg";
 import prodAlta from "@/assets/nb/Filtro-Alta-Vazao.jpg";
 import prodNbf from "@/assets/nb/NBF-14-1.jpg";
+import estandeAsset from "@/assets/nb/evento/estande-expopostos.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -103,6 +104,67 @@ function Index() {
               <p className="mt-2 text-sm text-muted-foreground leading-relaxed">{d.desc}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* EXPOPOSTOS 2026 */}
+      <section id="expopostos" className="px-6 lg:px-12 py-16 max-w-[1400px] mx-auto">
+        <div className="rounded-3xl bg-gradient-card border border-primary/40 p-8 md:p-12 shadow-elegant">
+          <div className="grid lg:grid-cols-2 gap-10 items-center">
+            <div>
+              <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] uppercase tracking-[0.25em] font-semibold">
+                <Sparkles className="size-3" /> Estamos na feira
+              </div>
+              <h2 className="mt-5 font-display text-4xl md:text-5xl font-bold leading-tight">
+                ExpoPostos &amp; Conveniência <span className="text-gradient">2026</span>
+              </h2>
+              <p className="mt-4 text-muted-foreground leading-relaxed">
+                A 22ª edição do maior evento de combustíveis e conveniência da América Latina reúne toda a cadeia do setor,
+                da distribuição ao abastecimento. A New Borges estará lá apresentando sua linha completa de filtros,
+                elementos filtrantes e a caixa separadora água e óleo.
+              </p>
+              <div className="mt-7 grid sm:grid-cols-3 gap-4">
+                <div className="rounded-xl bg-surface-elevated border border-border p-4">
+                  <div className="flex items-center gap-2 text-primary text-xs uppercase tracking-wider"><Calendar className="size-4" /> Data</div>
+                  <div className="mt-1 font-semibold text-sm">8, 9 e 10 de setembro de 2026</div>
+                </div>
+                <div className="rounded-xl bg-surface-elevated border border-border p-4">
+                  <div className="flex items-center gap-2 text-primary text-xs uppercase tracking-wider"><MapPin className="size-4" /> Local</div>
+                  <div className="mt-1 font-semibold text-sm">São Paulo Expo — São Paulo, SP</div>
+                </div>
+                <div className="rounded-xl bg-primary/10 border border-primary/40 p-4">
+                  <div className="flex items-center gap-2 text-primary text-xs uppercase tracking-wider"><MapPin className="size-4" /> Estande</div>
+                  <div className="mt-1 font-semibold text-sm">Rua O — Estande 05</div>
+                </div>
+              </div>
+              <div className="mt-8 flex flex-wrap gap-3">
+                <a href="https://expopostos.com.br" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+                  Site do evento <ArrowRight className="size-4" />
+                </a>
+                <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary hover:text-primary-foreground transition">
+                  Agendar visita no estande
+                </a>
+              </div>
+            </div>
+            <div className="grid gap-5">
+              <img
+                src={estandeAsset.url}
+                alt="Estande da New Borges na ExpoPostos 2026 — Rua O, Estande 05"
+                loading="lazy"
+                className="w-full h-auto rounded-2xl border border-border shadow-soft object-cover"
+              />
+              <div className="rounded-2xl overflow-hidden border border-border bg-background">
+                <iframe
+                  src="https://www.instagram.com/reel/DdCmg2QhobK/embed"
+                  title="New Borges na ExpoPostos 2026"
+                  loading="lazy"
+                  scrolling="no"
+                  allowFullScreen
+                  className="w-full h-[560px]"
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
