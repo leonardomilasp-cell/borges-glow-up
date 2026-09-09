@@ -64,6 +64,7 @@ function ProdutoError({ error, reset }: { error: Error; reset: () => void }) {
 
 function ProdutoDetalhe() {
   const { produto: p } = Route.useLoaderData() as { produto: Produto };
+  const router = useRouter();
   const related = produtos.filter((x) => x.category === p.category && x.slug !== p.slug).slice(0, 4);
   const gallery = p.gallery && p.gallery.length > 0 ? p.gallery : [p.img];
   const [active, setActive] = useState(0);
