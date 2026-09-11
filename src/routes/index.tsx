@@ -138,11 +138,8 @@ function Index() {
                 </div>
               </div>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="https://expopostos.com.br" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-                  Site do evento <ArrowRight className="size-4" />
-                </a>
-                <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full border border-primary text-primary px-6 py-3 font-semibold hover:bg-primary hover:text-primary-foreground transition">
-                  Agendar visita no estande
+                <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
+                  Fale com a nossa equipe <ArrowRight className="size-4" />
                 </a>
               </div>
             </div>
@@ -153,16 +150,6 @@ function Index() {
                 loading="lazy"
                 className="w-full h-auto rounded-2xl border border-border shadow-soft object-cover"
               />
-              <div className="rounded-2xl overflow-hidden border border-border bg-background">
-                <iframe
-                  src="https://www.instagram.com/reel/DdCmg2QhobK/embed"
-                  title="New Borges na ExpoPostos 2026"
-                  loading="lazy"
-                  scrolling="no"
-                  allowFullScreen
-                  className="w-full h-[560px]"
-                />
-              </div>
             </div>
           </div>
         </div>
