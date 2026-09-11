@@ -113,15 +113,19 @@ function Index() {
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] uppercase tracking-[0.25em] font-semibold">
-                <Sparkles className="size-3" /> Estamos na feira
+                <Sparkles className="size-3" /> Passamos pela feira
               </div>
               <h2 className="mt-5 font-display text-4xl md:text-5xl font-bold leading-tight">
-                ExpoPostos &amp; Conveniência <span className="text-gradient">2026</span>
+                A New Borges esteve na <span className="text-gradient">ExpoPostos 2026</span>
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                A 22ª edição do maior evento de combustíveis e conveniência da América Latina reúne toda a cadeia do setor,
-                da distribuição ao abastecimento. A New Borges estará lá apresentando sua linha completa de filtros,
-                elementos filtrantes e a caixa separadora água e óleo.
+                A New Borges marcou presen&#231;a na 22ª edi&#231;&#227;o da ExpoPostos & Conveni&#234;ncia, o maior evento de
+                combust&#237;veis e conveni&#234;ncia da Am&#233;rica Latina, apresentando sua linha completa de filtros, elementos
+                filtrantes e a caixa separadora &#225;gua e &#243;leo.
+              </p>
+              <p className="mt-4 text-muted-foreground leading-relaxed">
+                Agradecemos de cora&#231;&#227;o a todos que visitaram o nosso estande, conheceram nossos produtos de perto e
+                conversaram com a nossa equipe. Foi um prazer receber voc&#234;s!
               </p>
               <div className="mt-7 grid sm:grid-cols-3 gap-4">
                 <div className="rounded-xl bg-surface-elevated border border-border p-4">
