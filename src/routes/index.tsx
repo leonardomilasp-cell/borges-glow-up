@@ -119,13 +119,13 @@ function Index() {
                 A New Borges esteve na <span className="text-gradient">ExpoPostos 2026</span>
               </h2>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                A New Borges marcou presen&#231;a na 22ª edi&#231;&#227;o da ExpoPostos & Conveni&#234;ncia, o maior evento de
-                combust&#237;veis e conveni&#234;ncia da Am&#233;rica Latina, apresentando sua linha completa de filtros, elementos
-                filtrantes e a caixa separadora &#225;gua e &#243;leo.
+                A New Borges marcou presença na 22ª edição da ExpoPostos & Conveniência, o maior evento de
+                combustíveis e conveniência da América Latina, apresentando sua linha completa de filtros, elementos
+                filtrantes e a caixa separadora água e óleo.
               </p>
               <p className="mt-4 text-muted-foreground leading-relaxed">
-                Agradecemos de cora&#231;&#227;o a todos que visitaram o nosso estande, conheceram nossos produtos de perto e
-                conversaram com a nossa equipe. Foi um prazer receber voc&#234;s!
+                Agradecemos de coração a todos que visitaram o nosso estande, conheceram nossos produtos de perto e
+                conversaram com a nossa equipe. Foi um prazer receber vocês!
               </p>
               <div className="mt-7 grid sm:grid-cols-3 gap-4">
                 <div className="rounded-xl bg-surface-elevated border border-border p-4">
