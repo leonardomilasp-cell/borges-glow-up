@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles, Calendar, MapPin } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import hero from "@/assets/nb/produtos-hero.png";
+import heroAsset from "@/assets/nb/home/imagens-filtros-e-elementos.png.asset.json";
 import segFazendas from "@/assets/seg-fazendas.jpg";
 import segTrans from "@/assets/seg-transportadoras.jpg";
 import segUsinas from "@/assets/seg-usinas.jpg";
@@ -81,7 +81,7 @@ function Index() {
           <div data-reveal="load-scale" data-reveal-delay="2" className="lg:col-span-5 relative">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
             <div className="hero-product-float relative">
-              <img src={hero} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
+              <img src={heroAsset.url} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
             </div>
           </div>
 
