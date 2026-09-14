@@ -1,7 +1,7 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
 import { ArrowRight, Shield, Zap, Award, Truck, Wheat, Factory, Plane, CheckCircle2, Sparkles, Calendar, MapPin } from "lucide-react";
 import { Layout } from "@/components/site/Layout";
-import hero from "@/assets/nb/produtos-hero.png";
+import heroAsset from "@/assets/nb/home/imagens-filtros-e-elementos.png.asset.json";
 import segFazendas from "@/assets/seg-fazendas.jpg";
 import segTrans from "@/assets/seg-transportadoras.jpg";
 import segUsinas from "@/assets/seg-usinas.jpg";
@@ -19,6 +19,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Há 11 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação." },
       { property: "og:title", content: "New Borges — Filtros Industriais" },
       { property: "og:description", content: "Filtros e elementos filtrantes de alta performance. Confiabilidade, inovação e excelência." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
@@ -81,7 +83,7 @@ function Index() {
           <div data-reveal="load-scale" data-reveal-delay="2" className="lg:col-span-5 relative">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
             <div className="hero-product-float relative">
-              <img src={hero} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
+              <img src={heroAsset.url} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
             </div>
           </div>
 
@@ -140,11 +142,6 @@ function Index() {
                   <div className="flex items-center gap-2 text-primary text-xs uppercase tracking-wider"><MapPin className="size-4" /> Estande</div>
                   <div className="mt-1 font-semibold text-sm">Rua O — Estande 05</div>
                 </div>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-                  Fale com a nossa equipe <ArrowRight className="size-4" />
-                </a>
               </div>
             </div>
             <div className="grid gap-5">
