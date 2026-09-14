@@ -80,7 +80,7 @@ function Index() {
               ))}
             </div>
           </div>
-          <div data-reveal="load-scale" data-reveal-delay="2" className="lg:col-span-5 relative">
+          <div data-reveal="load-scale" data-reveal-delay="2" className="lg:col-span-5 relative w-[112%] -ml-[6%] lg:w-[126%] lg:-ml-[13%]">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
             <div className="hero-product-float relative">
               <img src={heroAsset.url} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
