@@ -141,11 +141,6 @@ function Index() {
                   <div className="mt-1 font-semibold text-sm">Rua O — Estande 05</div>
                 </div>
               </div>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
-                  Fale com a nossa equipe <ArrowRight className="size-4" />
-                </a>
-              </div>
             </div>
             <div className="grid gap-5">
               <img
