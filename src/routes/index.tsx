@@ -46,18 +46,18 @@ function Index() {
         <div className="absolute inset-0 grid-pattern opacity-60" />
         <div className="relative px-6 lg:px-12 pt-20 pb-32 grid lg:grid-cols-12 gap-10 items-center max-w-[1400px] mx-auto">
           <div className="lg:col-span-7">
-            <div className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-4 py-1.5 text-xs">
+            <div data-reveal="load" className="inline-flex items-center gap-2 rounded-full border border-border bg-surface/50 backdrop-blur px-4 py-1.5 text-xs">
               <Sparkles className="size-3.5 text-primary" />
               <span className="text-muted-foreground">Há</span>
               <span className="font-semibold text-foreground">11 anos no mercado</span>
             </div>
-            <h1 className="mt-6 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
+            <h1 data-reveal="load" data-reveal-delay="1" className="mt-6 font-display font-bold text-5xl md:text-6xl lg:text-7xl leading-[0.95] tracking-tight">
               Filtros que <span className="text-gradient">protegem</span> a sua operação.
             </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-xl">
+            <p data-reveal="load" data-reveal-delay="2" className="mt-6 text-lg text-muted-foreground max-w-xl">
               Fabricamos filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação. Confiabilidade, inovação e excelência em cada peça.
             </p>
-            <div className="mt-9 flex flex-wrap gap-3">
+            <div data-reveal="load" data-reveal-delay="3" className="mt-9 flex flex-wrap gap-3">
               <a href="https://wa.link/x20tj3" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-2 rounded-full bg-gradient-primary px-6 py-3.5 font-semibold text-primary-foreground shadow-glow hover:opacity-90 transition">
                 Solicitar orçamento <ArrowRight className="size-4" />
               </a>
@@ -65,7 +65,7 @@ function Index() {
                 Ver produtos
               </Link>
             </div>
-            <div className="mt-12 grid grid-cols-3 gap-6 max-w-md">
+            <div data-reveal="load" data-reveal-delay="4" className="mt-12 grid grid-cols-3 gap-6 max-w-md">
               {[
                 { v: "10+", l: "anos no mercado" },
                 { v: "4", l: "setores atendidos" },
@@ -78,9 +78,9 @@ function Index() {
               ))}
             </div>
           </div>
-          <div className="lg:col-span-5 relative">
+          <div data-reveal="load-scale" data-reveal-delay="2" className="lg:col-span-5 relative">
             <div className="absolute -inset-10 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
-            <div className="relative">
+            <div className="hero-product-float relative">
               <img src={hero} alt="Linha de filtros e elementos filtrantes New Borges" width={1600} height={1200} className="w-full h-auto drop-shadow-2xl" />
             </div>
           </div>
@@ -95,8 +95,8 @@ function Index() {
             { icon: Shield, title: "Qualidade certificada", desc: "Atendemos os mais rigorosos padrões da indústria, com testes em cada lote produzido." },
             { icon: Zap, title: "Pronta entrega", desc: "Grande estoque disponível para envio rápido e operação sem paradas." },
             { icon: Award, title: "Preço justo", desc: "Fabricação própria garante o melhor custo-benefício do mercado nacional." },
-          ].map(d => (
-            <div key={d.title} className="group relative rounded-2xl bg-gradient-card border border-border p-7 hover:border-primary/50 transition shadow-soft">
+          ].map((d, index) => (
+            <div key={d.title} data-reveal data-reveal-delay={String(index + 1)} className="group relative rounded-2xl bg-gradient-card border border-border p-7 hover:border-primary/50 transition shadow-soft">
               <div className="size-12 rounded-xl bg-primary/10 grid place-items-center text-primary mb-5 group-hover:scale-110 transition">
                 <d.icon className="size-6" />
               </div>
@@ -109,7 +109,7 @@ function Index() {
 
       {/* EXPOPOSTOS 2026 */}
       <section id="expopostos" className="px-6 lg:px-12 py-16 max-w-[1400px] mx-auto">
-        <div className="rounded-3xl bg-gradient-card border border-primary/40 p-8 md:p-12 shadow-elegant">
+        <div data-reveal className="rounded-3xl bg-gradient-card border border-primary/40 p-8 md:p-12 shadow-elegant">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             <div>
               <div className="inline-flex items-center gap-2 rounded-full bg-primary/10 text-primary px-3 py-1 text-[11px] uppercase tracking-[0.25em] font-semibold">
@@ -161,7 +161,7 @@ function Index() {
 
       {/* PRODUTOS */}
       <section className="px-6 lg:px-12 py-24 max-w-[1400px] mx-auto">
-        <div className="flex items-end justify-between flex-wrap gap-4 mb-12">
+        <div data-reveal className="flex items-end justify-between flex-wrap gap-4 mb-12">
           <div>
             <div className="text-xs uppercase tracking-[0.3em] text-primary mb-3">Nossos produtos</div>
             <h2 className="font-display text-4xl md:text-5xl font-bold max-w-2xl">Mais que filtros, soluções de filtragem.</h2>
