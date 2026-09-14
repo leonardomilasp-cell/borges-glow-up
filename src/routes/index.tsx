@@ -19,6 +19,8 @@ export const Route = createFileRoute("/")({
       { name: "description", content: "Há 11 anos fabricando filtros e elementos filtrantes de alta performance para usinas, fazendas, transportadoras e aviação." },
       { property: "og:title", content: "New Borges — Filtros Industriais" },
       { property: "og:description", content: "Filtros e elementos filtrantes de alta performance. Confiabilidade, inovação e excelência." },
+      { property: "og:type", content: "website" },
+      { name: "twitter:card", content: "summary_large_image" },
     ],
   }),
   component: Index,
